@@ -1,0 +1,119 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  position: relative;
+  z-index: 1;
+  scroll-snap-align: start;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  padding: 0 2rem 0 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.heading-container {
+  padding-top: 2rem;
+}
+
+.introduction-container {
+  max-width: 500px;
+  text-align: justify;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+}
+
+.content-container {
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 2rem;
+  min-height: 300px;
+}
+
+.card {
+  background-color: green;
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+}
+
+.photo-container {
+  margin-top: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  min-height: 400px;
+}
+
+#header-branding {
+  display: inline-flex;
+  width: 20%;
+  align-items: center;
+}
+
+#header-nav-container {
+  display: flex;
+  justify-content: end;
+  width: 80%;
+}
+
+#header-nav-menu {
+  display: inline-flex;
+  gap: 1rem;
+}
+
+#home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
