@@ -28,6 +28,10 @@ a {
   color: black;
 }
 
+h1 {
+  text-align: center;
+}
+
 h2 {
   text-align: center;
 }
@@ -41,6 +45,12 @@ h2 {
 
 .heading-container {
   padding-top: 2rem;
+}
+
+.content-container {
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 #header-branding {
