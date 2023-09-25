@@ -7,10 +7,14 @@ html {
     margin: 0;
   }
   
-  header {
-    position: relative;
-    z-index: 1;
-    scroll-snap-align: start;
+  .header {
+    position: fixed;
+    width: 100%;
+   background: white;
+  }
+
+  img {
+    height: 150px;
   }
   
   section {
@@ -22,10 +26,46 @@ html {
   ul {
     list-style: none;
   }
-  
+
   a {
-    text-decoration: none;
-    color: black;
+    font-size: 1.7rem;
+    color: rgb(2, 4, 131);
+    margin-left: 4rem;
+    font-weight: 900;
+    transition: all 200ms ease-in-out;
+    width: 100%;
+    border-color: rgb(117, 222, 236);
+    border-radius: 80px;
+    text-decoration: none;  }
+
+  a.active {
+    color: rgb(117, 222, 236);
+  }
+  
+  a:hover {
+    opacity: 0.7;
+    color: rgb(117, 222, 236);
+    cursor: pointer;
+  }
+
+  .btn {
+    padding-left: 100px;
+    text-align: center;
+    display: flexbox;
+    padding: 0.5rem 2.8rem;
+    background: -webkit-linear-gradient(to right, #8dcbe7, rgb(164, 132, 224));
+  background: linear-gradient(to right, #d178e7, #e5e6f7);
+    border-radius: 4rem;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #2000af;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 1rem white;
+    color: white;
   }
   
   h1 {
@@ -35,7 +75,21 @@ html {
   h2 {
     text-align: center;
   }
-  
+
+  .heading-container h1 {
+    padding-right: 40%;
+    font-size: 80px;
+    text-align: left;  
+    background-image: url(images/cloud.png);
+    background-size:40%;
+    background-position: left top 120px;
+    background-repeat:no-repeat;
+}
+  .heading-container h1 span {
+    color: #5de4c7;
+    font-size: 120px;
+  }
+
   .header-container {
     display: flex;
     flex-direction: row;
@@ -52,10 +106,22 @@ html {
     border: 2px solid black;
     border-radius: 5px;
   }
+
+  #home {
+    padding: 5%;
+    background-image: url(images/airplane2.png);
+    background-size:30%;
+    align-items: 10%;
+    background-position: right;
+    background-repeat: no-repeat;
+
+  }
   
   .introduction-container {
     max-width: 500px;
     text-align: justify;
+    margin-right: 70%;
+    margin-top: 5%;
   }
   
   .section-container {
@@ -85,7 +151,7 @@ html {
   #home-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     height: 100%;
   }
