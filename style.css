@@ -16,6 +16,7 @@ header {
 section {
   height: 100vh;
   scroll-snap-align: start;
+  padding: 0 0 2rem 2rem;
 }
 
 ul {
@@ -27,11 +28,19 @@ a {
   color: black;
 }
 
+h2 {
+  text-align: center;
+}
+
 .header-container {
   display: flex;
   flex-direction: row;
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+.heading-container {
+  padding-top: 2rem;
 }
 
 #header-branding {
