@@ -5,6 +5,10 @@ body {
 header {
 }
 
+section {
+  height: 100vh;
+}
+
 ul {
   list-style: none;
 }
