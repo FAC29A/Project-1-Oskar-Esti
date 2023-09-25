@@ -16,6 +16,15 @@ html {
   img {
     height: 150px;
   }
+
+  .airplane {
+    rotate: 270deg;
+    padding-top: 30%;
+    width: 70%;
+    height: 70%;
+    margin-left: 30px;
+    cursor: pointer;
+  }
   
   section {
     height: 100vh;
@@ -49,17 +58,14 @@ html {
   }
 
   .btn {
-    padding-left: 100px;
     text-align: center;
-    display: flexbox;
     padding: 0.5rem 2.8rem;
     background: -webkit-linear-gradient(to right, #8dcbe7, rgb(164, 132, 224));
   background: linear-gradient(to right, #d178e7, #e5e6f7);
-    border-radius: 4rem;
     font-size: 2rem;
     font-weight: 900;
     color: #2000af;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.01rem;
     font-weight: 600;
   }
   
@@ -76,13 +82,22 @@ html {
     text-align: center;
   }
 
+  .left {
+    min-height: 10vh;
+
+    max-width: 50%;
+}
+.right {
+    max-width: 40%;
+
+}
+
   .heading-container h1 {
-    padding-right: 40%;
     font-size: 80px;
     text-align: left;  
     background-image: url(images/cloud.png);
-    background-size:40%;
-    background-position: left top 120px;
+    background-size:80%;
+    background-position: left bottom 200%;
     background-repeat:no-repeat;
 }
   .heading-container h1 span {
@@ -98,18 +113,25 @@ html {
   }
   
   .heading-container {
+    display: flex;
+
+    flex-direction: row;
     padding-top: 2rem;
   }
   
   .content-container {
     padding: 1rem;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 5px;    
+
   }
 
+  .home{ 
+    display:flex
+  }
   #home {
+    display: flex;
     padding: 5%;
-    background-image: url(images/airplane2.png);
     background-size:30%;
     align-items: 10%;
     background-position: right;
@@ -118,10 +140,10 @@ html {
   }
   
   .introduction-container {
+    background-image: url(images/airplane3.png);
     max-width: 500px;
     text-align: justify;
     margin-right: 70%;
-    margin-top: 5%;
   }
   
   .section-container {
@@ -151,7 +173,5 @@ html {
   #home-container {
     display: flex;
     flex-direction: column;
-    justify-content: top;
-    align-items: center;
     height: 100%;
   }
