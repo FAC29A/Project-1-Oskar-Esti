@@ -1,4 +1,10 @@
-# Sky & Fly Airplane Enthusiasts
+<!-- ICON -->
+<div align="center">
+  <a href="https://fac29a.github.io/Project-1-Oskar-Esti//" {:target="_blank"}>
+    <img src="images/airplane2.png" alt="airplane" width="80" height="80">
+  </a>
+
+# Sky & Fly Airplane Enthusiasts - by [Oskar Przybylski](https://www.linkedin.com/in/oskar-przybylski/) & [Esti Shimony](https://www.linkedin.com/in/ester-shimony/)
 
 Welcome to Sky & Fly Airplane Enthusiasts, your go-to agency for all things related to airplanes. We are passionate about aviation and have embarked on an exciting project to bring our love for planes to the world. 
 
@@ -10,17 +16,18 @@ Welcome to Sky & Fly Airplane Enthusiasts, your go-to agency for all things rela
 
 - **Our Team:** Our agency is a collective effort led by a dynamic team, who themselves have a background as pilots and possess extensive knowledge about airplanes.
 
-- **Collaboration:** We're proud to mention that we had the privilege of working closely with our talented team members, Oskar and Esti, who have added their expertise and creativity to this project.
+- **Collaboration:** We're proud to mention that we had the privilege of working closely as a talented team members, who have added their expertise and creativity to this project.
 
 ## Project Overview
 
-This project is the culmination of our efforts to create a user-friendly and informative website that caters to both potential clients and aviation enthusiasts. Here are some key highlights:
+This project is the culmination of our efforts as a team, with Esti and Oskar at the helm. We have thoroughly enjoyed working together to create a user-friendly and informative website that caters to both potential clients and aviation enthusiasts. Here are some key highlights:
 
 - **Unique Approach:** We've put our own innovative spin on the project, incorporating cutting-edge technology and unconventional ideas to make it stand out from the crowd.
 
 - **User Feedback:** Throughout the development process, we sought advice and feedback from students of the FAC (Flight Agency Consulting) Bootcamp Skills Program. Their valuable insights helped us refine our project and make it even better.
 
-- **Fun and Passion:** Building this project has been an absolute joy for us. Our passion for aviation and the camaraderie within our team made the entire process an enjoyable and fulfilling experience.
+- **Fun and Passion:** Building this project has been an absolute joy for us. Our shared passion for aviation and the camaraderie within our team made the entire process an enjoyable and fulfilling experience.
+
 
 ## Pros and Cons
 
