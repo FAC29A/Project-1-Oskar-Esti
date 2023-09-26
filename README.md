@@ -8,7 +8,7 @@ Welcome to Sky & Fly Airplane Enthusiasts, your go-to agency for all things rela
 
 - **Our Vision:** We strive to provide a unique and personalized experience for anyone looking to buy an aircraft or explore the world of aviation.
 
-- **Our Team:** Our agency is a collective effort led by a dynamic duo, John Smith and Emily Davis, who themselves have a background as pilots and possess extensive knowledge about airplanes.
+- **Our Team:** Our agency is a collective effort led by a dynamic team, who themselves have a background as pilots and possess extensive knowledge about airplanes.
 
 - **Collaboration:** We're proud to mention that we had the privilege of working closely with our talented team members, Oskar and Esti, who have added their expertise and creativity to this project.
 
