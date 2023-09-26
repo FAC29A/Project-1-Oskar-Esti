@@ -163,7 +163,7 @@ html {
     padding: 9%;
     background-position: right;
     background-repeat: no-repeat;
-    background: linear-gradient(white, white, white, #d7e0ec, white);
+    background: linear-gradient(rgb(233, 223, 223),rgba(177, 185, 194, 0.432), rgb(219, 210, 210),rgba(194, 200, 206, 0.432) );
   }
   .airplane2 {
     height: 500px;
@@ -225,7 +225,35 @@ html {
     }
   }
 
-
+#team {
+    background-image: linear-gradient(
+        to top,
+        rgba(245, 245, 245, 0) 0%,
+        rgba(250, 247, 247, 0) 75%,
+        rgb(252, 245, 245) 100%
+      ),
+      linear-gradient(
+        to left,
+        rgba(245, 245, 245, 0) 0%,
+        rgba(250, 247, 247, 0) 75%,
+        rgb(252, 245, 245) 100%
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(245, 245, 245, 0) 0%,
+        rgba(250, 247, 247, 0) 75%,
+        rgb(252, 245, 245) 100%
+      ),
+      linear-gradient(
+        to right,
+        rgba(245, 245, 245, 0) 0%,
+        rgba(250, 247, 247, 0) 75%,
+        rgb(252, 245, 245) 100%
+      ),url(images/airplane1.png);
+      height: 400px;
+      width: 100%;
+      border-radius: 20px;
+}
 
   #team-members {
     display: block;
@@ -235,6 +263,7 @@ html {
     display: block;
     padding-left: 20%;
 }
+
 
   .card-container {
     display: grid;
@@ -253,16 +282,21 @@ html {
   overflow: hidden;
   display: flex;
   height: 250px;
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 5rem rgb(255, 255, 255);
+  overflow: hidden;
   }
   
   .team-img {
     width: 100%;
-  border-radius: 0%;
-  margin-bottom: 0%;
-  display: 0%;
-  margin: 0%;
-  max-width: 100%;
-  cursor: pointer;
+    height: 100%;
+    border-radius: 0%;
+    margin-bottom: 0%;
+    display: 0%;
+    margin: 0%;
+    max-width: 100%;
+    cursor: pointer;
   }
   
   .photo-container {
