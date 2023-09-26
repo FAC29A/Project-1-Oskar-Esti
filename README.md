@@ -1,10 +1,9 @@
-<!-- ICON -->
-<div align="center">
-  <a href="https://fac29a.github.io/Project-1-Oskar-Esti/" {:target="_blank" rel="noopener"}>
-    <img src="images/airplane2.png" alt="airplane" width="80" height="80">
-  </a>
+<!--Airplane ICON --> <div align="center">
+  <a href="https://fac29a.github.io/Project-1-Oskar-Esti/">
+    <img src="images/airplane2.png" alt="Airplane" width="80" height="80">
+  </a> <br >
 
-# Sky & Fly Airplane Enthusiasts - by [Oskar Przybylski](https://www.linkedin.com/in/oskar-przybylski/) & [Esti Shimony](https://www.linkedin.com/in/ester-shimony/)
+# Sky & Fly Airplane Enthusiasts - by [Oskar Przybylski](https://www.linkedin.com/in/oskar-przybylski/) & [Esti Shimony](https://www.linkedin.com/in/ester-shimony/)<br ></div>
 
 Welcome to [Sky & Fly](https://fac29a.github.io/Project-1-Oskar-Esti/) Airplane Enthusiasts, your go-to agency for all things related to airplanes. We are passionate about aviation and have embarked on an exciting project to bring our love for planes to the world. 
 
