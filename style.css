@@ -1,119 +1,298 @@
 html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+  }
+
+  section {
+    padding: 0 0 2rem 2rem;
+  }
+  
+  .header {
+    position: fixed;
+    width: 100%;
+   background: white;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    font-size: 1.7rem;
+    color: rgb(2, 4, 131);
+    margin-left: 4rem;
+    font-weight: 900;
+    transition: all 200ms ease-in-out;
+    width: 100%;
+    border-color: rgb(117, 222, 236);
+    border-radius: 80px;
+    text-decoration: none;  }
+
+  a.active {
+    color: rgb(55, 221, 243);
+  }
+  
+  a:hover {
+    opacity: 0.7;
+    color: rgb(117, 222, 236);
+    cursor: pointer;
+  }
+
+  #home {
+    display: flex;
+    padding: 5%;
+    background-size:30%;
+    align-items: 10%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background: linear-gradient(white, white, white, #6b9ee0, #e5e6f7, white);
+  }
+  
+  img {
+    height: 150px;
+  }
+
+  .airplane {
+    rotate: 270deg;
+    padding-top: 30%;
+    margin-left: 30px;
+    height: 30%;
+    cursor: pointer;
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: airplane;
+    -webkit-animation-duration: 11s;
+  }
+
+  @keyframes airplane {
+    0% {
+        right: 0;
+      }
+      100% {
+        right: 130%;
+  }}
+  
+
+  .btn {
+    text-align: center;
+    padding: 0.5rem 2.8rem;
+  background: linear-gradient(to right, #d178e7, #e5e6f7);
+    font-size: 2rem;
+    font-weight: 900;
+    color: #2000af;
+    letter-spacing: 0.01rem;
+    font-weight: 600;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 1rem white;
+    color: white;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .left {
+   font-size: 25px;
+    max-width: 65%;
+    height: 60%;
 }
 
-body {
-  margin: 0;
+.left span {
+    color: #1c0cf5;
+    font-size: 40px; 
+    font-weight: 900;
 }
 
-header {
-  position: relative;
-  z-index: 1;
-  scroll-snap-align: start;
+.right {
+    max-width: 40%;
+
 }
 
-section {
-  height: 100vh;
-  scroll-snap-align: start;
-  padding: 0 2rem 0 2rem;
+
+ 
+
+  .heading-container h1 {
+    font-size: 80px;
+    text-align: left;  
+   
+}
+  .heading-container h1 span {
+    color: #5de4c7;
+    font-size: 120px;
+  }
+
+  .heading-container h2 span {
+    color: #5de4c7;
+    font-size: 50px;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .heading-container {
+ 
+    display: flex;
+
+    flex-direction: row;
+    padding-top: 2rem;
+  }
+  
+  .content-container {
+    display: flex;
+    padding: 1rem;
+    border-radius: 5px;    
+    font-size: 20px;
+    font-weight: 500;
+  }
+  #about{
+    padding: 9%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background: linear-gradient(white, white, white, #d7e0ec, white);
+  }
+  .airplane2 {
+    height: 500px;
+  }
+
+  
+  .introduction-container {
+    max-width: 500px;
+   
+  }
+  
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+  }
+  
+  #header-branding {
+    display: inline-flex;
+    width: 20%;
+    align-items: center;
+  }
+  
+  #header-nav-container {
+    display: flex;
+    justify-content: end;
+    width: 80%;
+  }
+  
+  #header-nav-menu {
+    display: inline-flex;
+    gap: 1rem;
+  }
+  
+  #home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .cloud {
+    height: 60%;
+    cursor: pointer;
+    position: absolute;
+    animation: cloud 20s infinite;
+  }
+  @keyframes cloud {
+    0% {
+      transform: translateX(10px);
+    }
+  
+    50% {
+      transform: translate(-10px, -10px);
+      transform: skewY(5deg);
+    }
+    100% {
+      transform: rotate(360deg) rotate(-360deg) translateX(10px);
+    }
+  }
+
+
+
+  #team-members {
+    display: block;
+  }
+
+  #team-information {
+    display: block;
+    padding-left: 20%;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
-
-.header-container {
-  display: flex;
-  flex-direction: row;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.heading-container {
-  padding-top: 2rem;
-}
-
-.introduction-container {
-  max-width: 500px;
-  text-align: justify;
-}
-
-.section-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  height: 100%;
-}
-
-.content-container {
-  padding: 1rem;
-  border: 2px solid black;
-  border-radius: 5px;
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 1rem;
-  padding: 1rem;
-  border: 2px solid black;
-  border-radius: 5px;
-  margin-top: 2rem;
-  min-height: 300px;
-}
-
-.card {
-  background-color: green;
-}
-
-.team-img {
-  width: 100%;
-  height: 100%;
-}
-
-.photo-container {
-  margin-top: 1rem;
-  border: 2px solid black;
-  border-radius: 5px;
-  min-height: 400px;
-}
-
-#header-branding {
-  display: inline-flex;
-  width: 20%;
+  .card-container {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-}
-
-#header-nav-container {
+  gap: 1.7rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  }
+  
+  .card {
+    background-color: green;
+    position: relative;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 5rem rgb(255, 255, 255);
+  overflow: hidden;
   display: flex;
-  justify-content: end;
-  width: 80%;
-}
-
-#header-nav-menu {
-  display: inline-flex;
-  gap: 1rem;
-}
-
-#home-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
+  height: 250px;
+  }
+  
+  .team-img {
+    width: 100%;
+  border-radius: 0%;
+  margin-bottom: 0%;
+  display: 0%;
+  margin: 0%;
+  max-width: 100%;
+  cursor: pointer;
+  }
+  
+  .photo-container {
+    margin-top: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    min-height: 400px;
+  }
+  
+  #header-branding {
+    display: inline-flex;
+    width: 20%;
+    align-items: center;
+  }
+  
+  #header-nav-container {
+    display: flex;
+    justify-content: end;
+    width: 80%;
+  }
+  
+  #header-nav-menu {
+    display: inline-flex;
+    gap: 1rem;
+  }
+  
+  #home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
