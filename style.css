@@ -1,341 +1,327 @@
 html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    margin: 0;
-  }
-
-  section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
-  }
-
-  .section-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    height: 100%;
-  }
-
-  .left {
-    font-size: 25px;
-     height: 60%;
-     max-width: 50%;
-
- }
-
- 
-.right {
-    max-width: 40%;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
-  
-  /* ------------------------------------ HEADER ------------------------------------------------------------------------------------------------------------------------------ */
 
-  .header {
-    position: fixed;
-    width: 100%;
-   background: white;
+body {
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+}
+
+.left {
+  font-size: 16px;
+  height: 60%;
+  max-width: 50%;
+}
+
+.right {
+  max-width: 40%;
+}
+
+/* ------------------------------------ HEADER ------------------------------------------------------------------------------------------------------------------------------ */
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 3;
+}
+
+#header-branding {
+  display: inline-flex;
+  width: 20%;
+  align-items: center;
+}
+
+#header-nav-container {
+  display: flex;
+  justify-content: end;
+  width: 80%;
+}
+
+#header-nav-menu {
+  display: inline-flex;
+  gap: 1rem;
+}
+
+/* LOGO */
+img {
+  height: 70px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-size: 1.7rem;
+  color: rgb(2, 4, 131);
+  margin-left: 4rem;
+  font-weight: 900;
+  transition: all 200ms ease-in-out;
+  width: 100%;
+  border-color: rgb(117, 222, 236);
+  border-radius: 80px;
+  text-decoration: none;
+}
+
+a.active {
+  color: rgb(55, 221, 243);
+}
+
+a:hover {
+  opacity: 0.7;
+  color: rgb(117, 222, 236);
+  cursor: pointer;
+}
+
+/* ------------------------------------ HOME ------------------------------------------------------------------------------------------------------------------------------ */
+
+#home {
+  display: flex;
+  padding: 5%;
+  background-size: 30%;
+  align-items: 10%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background: linear-gradient(white, white, white, #6b9ee0, #e5e6f7, white);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.airplane {
+  position: absolute;
+  padding-right: 100rem;
+  height: 150px;
+  cursor: pointer;
+  -webkit-animation: fly 5s linear 0s infinite;
+  -moz-animation: 5s linear 0s infinite;
+  -0-animation: fly 5s linear 0s infinite;
+  animation: fly 5s linear 0s infinite;
+}
+
+@keyframes fly {
+  0% {
+    top: 60%;
+    left: -30%;
+    transform: translateX(55%);
+    rotate: -40deg;
+    transform: translateX(0%) translateY(0%);
+  }
+  75% {
+    top: -500%;
+    left: 50%;
+    transform: translateX(30%);
+    rotate: 10deg;
+  }
+  75% {
+    top: 10%;
+    left: 50%;
+    transform: translateX(30%);
+    rotate: 10deg;
+  }
+  100% {
+    top: -100%;
+    left: 100%;
+    transform: translateX(100%) translateY(-100%);
+  }
+}
+
+#home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cloud {
+  height: 60%;
+  cursor: pointer;
+  position: absolute;
+  animation: cloud 12s infinite;
+}
+@keyframes cloud {
+  0% {
+    transform: translateX(10px);
   }
 
-  #header-branding {
-    display: inline-flex;
-    width: 20%;
-    align-items: center;
+  50% {
+    transform: translate(-10px, -10px);
+    transform: skewY(5deg);
   }
-  
-  #header-nav-container {
-    display: flex;
-    justify-content: end;
-    width: 80%;
+  100% {
+    transform: rotate(360deg) rotate(-360deg) translateX(10px);
   }
-  
-  #header-nav-menu {
-    display: inline-flex;
-    gap: 1rem;
-  }
-
-  /* LOGO */
-  img {
-    height: 70px;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  a {
-    font-size: 1.7rem;
-    color: rgb(2, 4, 131);
-    margin-left: 4rem;
-    font-weight: 900;
-    transition: all 200ms ease-in-out;
-    width: 100%;
-    border-color: rgb(117, 222, 236);
-    border-radius: 80px;
-    text-decoration: none;  }
-
-  a.active {
-    color: rgb(55, 221, 243);
-  }
-  
-  a:hover {
-    opacity: 0.7;
-    color: rgb(117, 222, 236);
-    cursor: pointer;
-  }
-
-  /* ------------------------------------ HOME ------------------------------------------------------------------------------------------------------------------------------ */
-
-  
-  #home {
-    display: flex;
-    padding: 5%;
-    background-size:30%;
-    align-items: 10%;
-    background-position: right;
-    background-repeat: no-repeat;
-    background: linear-gradient(white, white, white, #6b9ee0, #e5e6f7, white);
-  }
-  
-  .header-container {
-    display: flex;
-    flex-direction: row;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  .airplane {
-    position: absolute;
-    padding-right: 100rem;
-    height: 150px;
-    cursor: pointer;
-    -webkit-animation: fly 5s linear 0s infinite;
-    -moz-animation:  5s linear 0s infinite;
-    -0-animation: fly 5s linear 0s infinite;
-    animation: fly 5s linear 0s infinite;
-  }
-
-  @keyframes fly {
-    0% {
-      top: 60%;
-      left: -30%;
-      transform: translateX(55%);
-      rotate: -40deg;
-      transform: translateX(0%) translateY(0%);
-
-    }
-    75% {
-        top: -500%;
-        left: 50%;
-        transform: translateX(30%);
-        rotate: 10deg;
-  
-      }
-    75% {
-      top: 10%;
-      left: 50%;
-      transform: translateX(30%);
-      rotate: 10deg;
-
-    }
-    100% {
-      top: -100%;
-      left: 100%;
-      transform: translateX(100%) translateY(-100%);
-
-    }
-  }
-  
-  #home-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  .cloud {
-    height: 60%;
-    cursor: pointer;
-    position: absolute;
-    animation: cloud 12s infinite;
-  }
-  @keyframes cloud {
-    0% {
-      transform: translateX(10px);
-    }
-  
-    50% {
-      transform: translate(-10px, -10px);
-      transform: skewY(5deg);
-    }
-    100% {
-      transform: rotate(360deg) rotate(-360deg) translateX(10px);
-    }
-  }
-
-  
-  
-  /* ------------------------------------ HOME ------------------------------------------------------------------------------------------------------------------------------ */
-
-
-
-
+}
 
 .heading-container {
-    display: flex;
-  }
+  display: flex;
+}
 
 .heading-container h1 {
-    font-size: 60px;
-    text-align: left;  
-   
+  font-size: 60px;
+  text-align: left;
 }
-  .heading-container h1 span {
-    color: #5de4c7;
-    font-size: 80px;
-  }
+.heading-container h1 span {
+  color: #5de4c7;
+  font-size: 80px;
+}
 
-  
-
-  .btn {
-    text-align: center;
-    padding: 0.5rem 2.8rem;
+.btn {
+  text-align: center;
+  padding: 0.5rem 2.8rem;
   background: linear-gradient(to right, #d178e7, #e5e6f7);
-    font-size: 2rem;
-    font-weight: 900;
-    color: #2000af;
-    letter-spacing: 0.01rem;
-    font-weight: 600;
-  }
-  
-  .btn:hover {
-    box-shadow: 0 0 1rem white;
-    color: white;
-  }
-
-  /* ------------------------------------ ABOUT ------------------------------------------------------------------------------------------------------------------------------ */
-
- 
-  #about{
-    padding: 9%;
-    background-position: right;
-    background-repeat: no-repeat;
-    background: linear-gradient(rgb(233, 223, 223),rgba(177, 185, 194, 0.432), rgb(219, 210, 210),rgba(194, 200, 206, 0.432) );
-  }
-
-  .content-container {
-    display: flex;
-    padding: 1rem;
-    border-radius: 5px;    
-    font-size: 20px;
-    font-weight: 500;
-  }
-
-  /* Sky & Fly */
-  .heading-container h2 span {
-    color: #168b72;
-    font-size: 50px;
-  }
-
-  /* Welcome aboard */
-  .left span {
-    color: #947751;
-    font-size: 40px; 
-    font-weight: 900;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #2000af;
+  letter-spacing: 0.01rem;
+  font-weight: 600;
 }
 
-  .airplane2 {
-    height: 500px;
-  }
-   
-  
- 
-    /* ------------------------------------ TEAM ------------------------------------------------------------------------------------------------------------------------------ */
+.btn:hover {
+  box-shadow: 0 0 1rem white;
+  color: white;
+}
+
+/* ------------------------------------ ABOUT ------------------------------------------------------------------------------------------------------------------------------ */
+
+#about {
+  padding: 9%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    rgb(233, 223, 223),
+    rgba(177, 185, 194, 0.432),
+    rgb(219, 210, 210),
+    rgba(194, 200, 206, 0.432)
+  );
+}
+
+.content-container {
+  display: flex;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 7px;
+  font-weight: 500;
+}
+
+/* Sky & Fly */
+.heading-container h2 span {
+  color: #168b72;
+  font-size: 20px;
+}
+
+/* Welcome aboard */
+.left span {
+  color: #947751;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.airplane2 {
+  height: 500px;
+}
+
+/* ------------------------------------ TEAM ------------------------------------------------------------------------------------------------------------------------------ */
 
 #team {
-    background-image: url(images/airplane1.png);
-      height: 400px;
-      width: 100%;
-      border-radius: 20px;
+  background-image: url(images/airplane1.png);
+  border-radius: 20px;
 }
- 
+
 h2 {
-    text-align: center;
-    font-size: 30px;
-  }
-
-  #team-members {
-    display: block;
-  }
-
-  /* text */
-  #team-information {
-    display: block;
-    padding-left: 20%;
+  text-align: center;
+  font-size: 30px;
 }
 
-  .card-container {
-    display: grid;
+#team-members {
+  display: block;
+}
+
+/* text */
+#team-information {
+  display: block;
+  padding-left: 20%;
+  font-size: 19px;
+}
+
+.card-container {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 1.7rem;
   padding-left: 10%;
   padding-right: 10%;
-  
-  }
+}
 
-  
-  .card {
-    background-color: green;
-    position: relative;
-    border-radius: 1rem;
-    box-shadow: 0 0 5rem rgb(255, 255, 255);
-    overflow: hidden;
-    display: flex;
-    height: 300px;
-    width: 400px;
-    position: relative;
-    border-radius: 4rem;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    align-items: center;
-    }
+.card {
+  background-color: green;
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 0 5rem rgb(255, 255, 255);
+  overflow: hidden;
+  display: flex;
+  height: 300px;
+  width: 400px;
+  position: relative;
+  border-radius: 4rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  align-items: center;
+}
 
-    .card:hover {
-        transform: scale(2.1); /* Increase size on hover */
-    }
-  
-  .team-img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .member-info {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: opacity 0.3s, transform 0.3s;
+.card:hover {
+  transform: scale(2.1);
+  z-index: 2;
+}
+
+.team-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.member-info {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .card:hover .member-info {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  padding: 1.5rem;
 }
 
 .member-info h2 {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .member-info p {
-    font-size: 10px;
+  font-size: 10px;
+  text-align: justify;
 }
