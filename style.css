@@ -180,11 +180,7 @@ html {
 
 
 
-.left span {
-    color: #1c0cf5;
-    font-size: 40px; 
-    font-weight: 900;
-}
+
 
 .heading-container {
     display: flex;
@@ -200,10 +196,7 @@ html {
     font-size: 80px;
   }
 
-  .heading-container h2 span {
-    color: #5de4c7;
-    font-size: 50px;
-  }
+  
 
   .btn {
     text-align: center;
@@ -239,6 +232,19 @@ html {
     font-weight: 500;
   }
 
+  /* Sky & Fly */
+  .heading-container h2 span {
+    color: #168b72;
+    font-size: 50px;
+  }
+
+  /* Welcome aboard */
+  .left span {
+    color: #947751;
+    font-size: 40px; 
+    font-weight: 900;
+}
+
   .airplane2 {
     height: 500px;
   }
@@ -248,30 +254,7 @@ html {
     /* ------------------------------------ TEAM ------------------------------------------------------------------------------------------------------------------------------ */
 
 #team {
-    background-image: linear-gradient(
-        to top,
-        rgba(245, 245, 245, 0) 0%,
-        rgba(250, 247, 247, 0) 75%,
-        rgb(252, 245, 245) 100%
-      ),
-      linear-gradient(
-        to left,
-        rgba(245, 245, 245, 0) 0%,
-        rgba(250, 247, 247, 0) 75%,
-        rgb(252, 245, 245) 100%
-      ),
-      linear-gradient(
-        to bottom,
-        rgba(245, 245, 245, 0) 0%,
-        rgba(250, 247, 247, 0) 75%,
-        rgb(252, 245, 245) 100%
-      ),
-      linear-gradient(
-        to right,
-        rgba(245, 245, 245, 0) 0%,
-        rgba(250, 247, 247, 0) 75%,
-        rgb(252, 245, 245) 100%
-      ),url(images/airplane1.png);
+    background-image: url(images/airplane1.png);
       height: 400px;
       width: 100%;
       border-radius: 20px;
@@ -279,13 +262,14 @@ html {
  
 h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   #team-members {
     display: block;
   }
 
+  /* text */
   #team-information {
     display: block;
     padding-left: 20%;
@@ -298,31 +282,60 @@ h2 {
   gap: 1.7rem;
   padding-left: 10%;
   padding-right: 10%;
+  
   }
+
   
   .card {
     background-color: green;
     position: relative;
-  border-radius: 1rem;
-  box-shadow: 0 0 5rem rgb(255, 255, 255);
-  overflow: hidden;
-  display: flex;
-  height: 250px;
-  width: 300px;
-  position: relative;
-  border-radius: 4rem;
-  box-shadow: 0 0 5rem rgb(255, 255, 255);
-  overflow: hidden;
-  }
+    border-radius: 1rem;
+    box-shadow: 0 0 5rem rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    height: 300px;
+    width: 400px;
+    position: relative;
+    border-radius: 4rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    align-items: center;
+    }
+
+    .card:hover {
+        transform: scale(2.1); /* Increase size on hover */
+    }
   
   .team-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 0%;
-    margin-bottom: 0%;
-    display: 0%;
-    margin: 0%;
     max-width: 100%;
-    cursor: pointer;
+    height: auto;
   }
   
+  .member-info {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.card:hover .member-info {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.member-info h2 {
+    font-size: 15px;
+}
+
+.member-info p {
+    font-size: 10px;
+}
