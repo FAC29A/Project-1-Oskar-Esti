@@ -11,11 +11,53 @@ html {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
   }
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+  }
+
+  .left {
+    font-size: 25px;
+     max-width: 65%;
+     height: 60%;
+ }
+
+ 
+.right {
+    max-width: 40%;
+}
   
+  /* ------------------------------------ HEADER ------------------------------------------------------------------------------------------------------------------------------ */
+
   .header {
     position: fixed;
     width: 100%;
    background: white;
+  }
+
+  #header-branding {
+    display: inline-flex;
+    width: 20%;
+    align-items: center;
+  }
+  
+  #header-nav-container {
+    display: flex;
+    justify-content: end;
+    width: 80%;
+  }
+  
+  #header-nav-menu {
+    display: inline-flex;
+    gap: 1rem;
+  }
+
+  /* LOGO */
+  img {
+    height: 70px;
   }
 
   ul {
@@ -43,6 +85,9 @@ html {
     cursor: pointer;
   }
 
+  /* ------------------------------------ HOME ------------------------------------------------------------------------------------------------------------------------------ */
+
+  
   #home {
     display: flex;
     padding: 5%;
@@ -53,9 +98,14 @@ html {
     background: linear-gradient(white, white, white, #6b9ee0, #e5e6f7, white);
   }
   
-  img {
-    height: 150px;
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
+
+ 
 
   .airplane {
     rotate: 270deg;
@@ -76,129 +126,6 @@ html {
       100% {
         right: 130%;
   }}
-  
-
-  .btn {
-    text-align: center;
-    padding: 0.5rem 2.8rem;
-  background: linear-gradient(to right, #d178e7, #e5e6f7);
-    font-size: 2rem;
-    font-weight: 900;
-    color: #2000af;
-    letter-spacing: 0.01rem;
-    font-weight: 600;
-  }
-  
-  .btn:hover {
-    box-shadow: 0 0 1rem white;
-    color: white;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  h2 {
-    text-align: center;
-    font-size: 40px;
-  }
-
-  .left {
-   font-size: 25px;
-    max-width: 65%;
-    height: 60%;
-}
-
-.left span {
-    color: #1c0cf5;
-    font-size: 40px; 
-    font-weight: 900;
-}
-
-.right {
-    max-width: 40%;
-
-}
-
-
- 
-
-  .heading-container h1 {
-    font-size: 80px;
-    text-align: left;  
-   
-}
-  .heading-container h1 span {
-    color: #5de4c7;
-    font-size: 120px;
-  }
-
-  .heading-container h2 span {
-    color: #5de4c7;
-    font-size: 50px;
-  }
-
-  .header-container {
-    display: flex;
-    flex-direction: row;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  
-  .heading-container {
- 
-    display: flex;
-
-    flex-direction: row;
-    padding-top: 2rem;
-  }
-  
-  .content-container {
-    display: flex;
-    padding: 1rem;
-    border-radius: 5px;    
-    font-size: 20px;
-    font-weight: 500;
-  }
-  #about{
-    padding: 9%;
-    background-position: right;
-    background-repeat: no-repeat;
-    background: linear-gradient(rgb(233, 223, 223),rgba(177, 185, 194, 0.432), rgb(219, 210, 210),rgba(194, 200, 206, 0.432) );
-  }
-  .airplane2 {
-    height: 500px;
-  }
-
-  
-  .introduction-container {
-    max-width: 500px;
-   
-  }
-  
-  .section-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    height: 100%;
-  }
-  
-  #header-branding {
-    display: inline-flex;
-    width: 20%;
-    align-items: center;
-  }
-  
-  #header-nav-container {
-    display: flex;
-    justify-content: end;
-    width: 80%;
-  }
-  
-  #header-nav-menu {
-    display: inline-flex;
-    gap: 1rem;
-  }
   
   #home-container {
     display: flex;
@@ -225,6 +152,79 @@ html {
       transform: rotate(360deg) rotate(-360deg) translateX(10px);
     }
   }
+
+  
+  
+  /* ------------------------------------ HOME ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+.left span {
+    color: #1c0cf5;
+    font-size: 40px; 
+    font-weight: 900;
+}
+
+.heading-container {
+    display: flex;
+  }
+
+.heading-container h1 {
+    font-size: 60px;
+    text-align: left;  
+   
+}
+  .heading-container h1 span {
+    color: #5de4c7;
+    font-size: 80px;
+  }
+
+  .heading-container h2 span {
+    color: #5de4c7;
+    font-size: 50px;
+  }
+
+  .btn {
+    text-align: center;
+    padding: 0.5rem 2.8rem;
+  background: linear-gradient(to right, #d178e7, #e5e6f7);
+    font-size: 2rem;
+    font-weight: 900;
+    color: #2000af;
+    letter-spacing: 0.01rem;
+    font-weight: 600;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 1rem white;
+    color: white;
+  }
+
+  /* ------------------------------------ ABOUT ------------------------------------------------------------------------------------------------------------------------------ */
+
+ 
+  #about{
+    padding: 9%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgb(233, 223, 223),rgba(177, 185, 194, 0.432), rgb(219, 210, 210),rgba(194, 200, 206, 0.432) );
+  }
+
+  .content-container {
+    display: flex;
+    padding: 1rem;
+    border-radius: 5px;    
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .airplane2 {
+    height: 500px;
+  }
+   
+  
+ 
+    /* ------------------------------------ TEAM ------------------------------------------------------------------------------------------------------------------------------ */
 
 #team {
     background-image: linear-gradient(
@@ -255,6 +255,11 @@ html {
       width: 100%;
       border-radius: 20px;
 }
+ 
+h2 {
+    text-align: center;
+    font-size: 40px;
+  }
 
   #team-members {
     display: block;
@@ -264,7 +269,6 @@ html {
     display: block;
     padding-left: 20%;
 }
-
 
   .card-container {
     display: grid;
@@ -301,34 +305,3 @@ html {
     cursor: pointer;
   }
   
-  .photo-container {
-    margin-top: 1rem;
-    border: 2px solid black;
-    border-radius: 5px;
-    min-height: 400px;
-  }
-  
-  #header-branding {
-    display: inline-flex;
-    width: 20%;
-    align-items: center;
-  }
-  
-  #header-nav-container {
-    display: flex;
-    justify-content: end;
-    width: 80%;
-  }
-  
-  #header-nav-menu {
-    display: inline-flex;
-    gap: 1rem;
-  }
-  
-  #home-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
