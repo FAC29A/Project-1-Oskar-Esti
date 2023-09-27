@@ -21,8 +21,9 @@ html {
 
   .left {
     font-size: 25px;
-     max-width: 65%;
      height: 60%;
+     max-width: 50%;
+
  }
 
  
@@ -105,27 +106,47 @@ html {
     margin-right: 2rem;
   }
 
- 
-
   .airplane {
-    rotate: 270deg;
-    padding-top: 30%;
-    margin-left: 30px;
-    height: 30%;
-    cursor: pointer;
     position: absolute;
-    -webkit-animation: linear infinite;
-    -webkit-animation-name: airplane;
-    -webkit-animation-duration: 11s;
+    padding-right: 100rem;
+    height: 150px;
+    cursor: pointer;
+    -webkit-animation: fly 5s linear 0s infinite;
+    -moz-animation:  5s linear 0s infinite;
+    -0-animation: fly 5s linear 0s infinite;
+    animation: fly 5s linear 0s infinite;
   }
 
-  @keyframes airplane {
+  @keyframes fly {
     0% {
-        right: 0;
+      top: 60%;
+      left: -30%;
+      transform: translateX(55%);
+      rotate: -40deg;
+      transform: translateX(0%) translateY(0%);
+
+    }
+    75% {
+        top: -500%;
+        left: 50%;
+        transform: translateX(30%);
+        rotate: 10deg;
+  
       }
-      100% {
-        right: 130%;
-  }}
+    75% {
+      top: 10%;
+      left: 50%;
+      transform: translateX(30%);
+      rotate: 10deg;
+
+    }
+    100% {
+      top: -100%;
+      left: 100%;
+      transform: translateX(100%) translateY(-100%);
+
+    }
+  }
   
   #home-container {
     display: flex;
@@ -137,7 +158,7 @@ html {
     height: 60%;
     cursor: pointer;
     position: absolute;
-    animation: cloud 20s infinite;
+    animation: cloud 12s infinite;
   }
   @keyframes cloud {
     0% {
