@@ -8,7 +8,8 @@ html {
   }
 
   section {
-    padding: 0 0 2rem 2rem;
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
   }
   
   .header {
@@ -277,13 +278,14 @@ html {
   .card {
     background-color: green;
     position: relative;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   box-shadow: 0 0 5rem rgb(255, 255, 255);
   overflow: hidden;
   display: flex;
   height: 250px;
+  width: 300px;
   position: relative;
-  border-radius: 2rem;
+  border-radius: 4rem;
   box-shadow: 0 0 5rem rgb(255, 255, 255);
   overflow: hidden;
   }
