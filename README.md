@@ -1,11 +1,11 @@
 <!--Airplane ICON --> <div align="center">
   <a href="https://fac29a.github.io/Project-1-Oskar-Esti/">
-    <img src="images/airplane2.png" alt="Airplane" width="80" height="80">
+    <img src="images/logo.jpeg" alt="Logo" width="80" height="80">
   </a> <br >
 
 # Sky & Fly Airplane Enthusiasts - by [Oskar Przybylski](https://www.linkedin.com/in/oskar-przybylski/) & [Esti Shimony](https://www.linkedin.com/in/ester-shimony/)<br ></div>
 
-Welcome to [Sky & Fly](https://fac29a.github.io/Project-1-Oskar-Esti/) Airplane Enthusiasts, your go-to agency for all things related to airplanes. We are passionate about aviation and have embarked on an exciting project to bring our love for planes to the world. 
+Welcome to [Sky & Fly](https://fac29a.github.io/Project-1-Oskar-Esti/) Airplane Enthusiasts, your go-to agency for all things related to airplanes. We are passionate about aviation and have embarked on an exciting project to bring our love for planes to the world.
 
 ## About Our Agency
 
@@ -26,7 +26,6 @@ This project is the culmination of our efforts as a team, with Esti and Oskar at
 - **User Feedback:** Throughout the development process, we sought advice and feedback from students of the FAC (Flight Agency Consulting) Bootcamp Skills Program. Their valuable insights helped us refine our project and make it even better.
 
 - **Fun and Passion:** Building this project has been an absolute joy for us. Our shared passion for aviation and the camaraderie within our team made the entire process an enjoyable and fulfilling experience.
-
 
 ## Pros and Cons
 
@@ -56,4 +55,4 @@ Thank you for joining us on this exciting journey through the skies!
 
 ---
 
-*Disclaimer: Sky & Fly Airplane Enthusiasts is a fictional agency, and this README.md is a sample document created for illustrative purposes.*
+_Disclaimer: Sky & Fly Airplane Enthusiasts is a fictional agency, and this README.md is a sample document created for illustrative purposes._
