@@ -115,7 +115,9 @@ a:hover {
   -0-animation: fly 5s linear 0s infinite;
   animation: fly 5s linear 0s infinite;
 }
-
+html {
+  overflow-x: hidden;
+}
 @keyframes fly {
   0% {
     top: 60%;
