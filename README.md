@@ -1,5 +1,5 @@
 <!--Airplane ICON --> <div align="center">
-  <a href="https://fac29a.github.io/Project-1-Oskar-Esti/">
+  <a href="fac29a.github.io/sky-fly/">
     <img src="images/logo.jpeg" alt="Logo" width="80" height="80">
   </a> <br >
 
