@@ -3,7 +3,7 @@
     <img src="images/logo.jpeg" alt="Logo" width="80" height="80">
   </a> <br >
 
-# [Sky & Fly](fac29a.github.io/sky-fly/) Airplane Enthusiasts - by [Oskar Przybylski](https://www.linkedin.com/in/oskar-przybylski/) & [Esti Shimony](https://www.linkedin.com/in/ester-shimony/)<br ></div>
+# [Sky & Fly](https://fac29a.github.io/sky-fly/) Airplane Enthusiasts - by [Oskar Przybylski](https://www.linkedin.com/in/oskar-przybylski/) & [Esti Shimony](https://www.linkedin.com/in/ester-shimony/)<br ></div>
 
 Welcome to Sky & Fly Airplane Enthusiasts, your go-to agency for all things related to airplanes. We are passionate about aviation and have embarked on an exciting project to bring our love for planes to the world.
 
