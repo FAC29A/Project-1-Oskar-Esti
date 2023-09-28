@@ -7,6 +7,11 @@
 
 Welcome to Sky & Fly Airplane Enthusiasts, your go-to agency for all things related to airplanes. We are passionate about aviation and have embarked on an exciting project to bring our love for planes to the world.
 
+<!--About ICON --> <div align="center">
+  <a>
+    <img src="images/about.png" alt="Logo" width="80" height="80">
+  </a> <br >
+
 ## About Our Agency
 
 - **What We Do:** Our agency specializes in selling airplanes, offering expert advice to flight companies and aviation enthusiasts alike.
@@ -17,6 +22,11 @@ Welcome to Sky & Fly Airplane Enthusiasts, your go-to agency for all things rela
 
 - **Collaboration:** We're proud to mention that we had the privilege of working closely as a talented team members, who have added their expertise and creativity to this project.
 
+<!--Projects ICON --> <div align="center">
+  <a>
+    <img src="images/projects.png" alt="Logo" width="80" height="80">
+  </a> <br >
+
 ## Project Overview
 
 This project is the culmination of our efforts as a team, with Esti and Oskar at the helm. We have thoroughly enjoyed working together to create a user-friendly and informative website that caters to both potential clients and aviation enthusiasts. Here are some key highlights:
@@ -26,6 +36,11 @@ This project is the culmination of our efforts as a team, with Esti and Oskar at
 - **User Feedback:** Throughout the development process, we sought advice and feedback from students of the FAC (Flight Agency Consulting) Bootcamp Skills Program. Their valuable insights helped us refine our project and make it even better.
 
 - **Fun and Passion:** Building this project has been an absolute joy for us. Our shared passion for aviation and the camaraderie within our team made the entire process an enjoyable and fulfilling experience.
+
+<!--Pros & Cons ICON --> <div align="center">
+  <a>
+    <img src="images/prosandcons.png" alt="Logo" width="80" height="80">
+  </a> <br >
 
 ## Pros and Cons
 
@@ -45,6 +60,12 @@ This project is the culmination of our efforts as a team, with Esti and Oskar at
 
 - **Accessibility:** While we have strived to make our website accessible to all, there may still be areas where improvements can be made for differently-abled users.
 
+<!--Acknowledgments --> <div align="center">
+  <a>
+    <img src="images/Acknowledgments.png" alt="Logo" width="80" height="80">
+  </a> <br >
+
+
 ## Acknowledgments
 
 We want to extend our heartfelt thanks to all the students of the FAC Bootcamp Skills Program for their invaluable advice and support during the development of this project. Your insights have been instrumental in shaping our vision.
@@ -52,6 +73,11 @@ We want to extend our heartfelt thanks to all the students of the FAC Bootcamp S
 Lastly, we'd like to emphasize that building this website has been an incredibly fun and rewarding experience for us. Our passion for aviation is what drives us, and we hope to share that enthusiasm with everyone who visits Sky & Fly Airplane Enthusiasts.
 
 Thank you for joining us on this exciting journey through the skies!
+
+<!--Thank-you --> <div align="center">
+  <a>
+    <img src="images/thank-you.png" alt="Logo" width="80" height="80">
+  </a> <br >
 
 ---
 
