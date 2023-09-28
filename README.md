@@ -12,7 +12,7 @@ Welcome to Sky & Fly Airplane Enthusiasts, your go-to agency for all things rela
     <img src="images/about.png" alt="Logo" width="80" height="80">
   </a> <br >
 
-## About Our Agency
+## About Our Agency </div>
 
 - **What We Do:** Our agency specializes in selling airplanes, offering expert advice to flight companies and aviation enthusiasts alike.
 
@@ -27,7 +27,7 @@ Welcome to Sky & Fly Airplane Enthusiasts, your go-to agency for all things rela
     <img src="images/projects.png" alt="Logo" width="80" height="80">
   </a> <br >
 
-## Project Overview
+## Project Overview </div>
 
 This project is the culmination of our efforts as a team, with Esti and Oskar at the helm. We have thoroughly enjoyed working together to create a user-friendly and informative website that caters to both potential clients and aviation enthusiasts. Here are some key highlights:
 
@@ -44,7 +44,7 @@ This project is the culmination of our efforts as a team, with Esti and Oskar at
 
 ## Pros and Cons
 
-### Pros
+### Pros </div>
 
 - **Expertise:** Our project showcases our deep understanding of the aviation industry, thanks to our team's background as pilots and aviation specialists.
 
@@ -52,7 +52,9 @@ This project is the culmination of our efforts as a team, with Esti and Oskar at
 
 - **User-Centric:** The website caters to both potential clients looking to buy airplanes and aviation enthusiasts seeking information, ensuring a wide audience appeal.
 
-### Cons
+<div align="center"> 
+
+### Cons </div>
 
 - **Ongoing Development:** As with any project, there is always room for improvement. We acknowledge that our website may require continuous updates to stay current in the ever-evolving aviation industry.
 
@@ -66,11 +68,14 @@ This project is the culmination of our efforts as a team, with Esti and Oskar at
   </a> <br >
 
 
-## Acknowledgments
+## Acknowledgments </div>
 
 We want to extend our heartfelt thanks to all the students of the FAC Bootcamp Skills Program for their invaluable advice and support during the development of this project. Your insights have been instrumental in shaping our vision.
 
 Lastly, we'd like to emphasize that building this website has been an incredibly fun and rewarding experience for us. Our passion for aviation is what drives us, and we hope to share that enthusiasm with everyone who visits Sky & Fly Airplane Enthusiasts.
+
+<div align="center"> 
+
 
 Thank you for joining us on this exciting journey through the skies!
 
