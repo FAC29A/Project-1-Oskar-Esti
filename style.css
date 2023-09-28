@@ -20,7 +20,7 @@ section {
 }
 
 .left {
-  font-size: 16px;
+  font-size: 22px;
   height: 60%;
   max-width: 50%;
 }
@@ -178,6 +178,7 @@ html {
 .heading-container h1 {
   font-size: 60px;
   text-align: left;
+  padding-bottom: 7%;
 }
 .heading-container h1 span {
   color: #5de4c7;
@@ -216,7 +217,6 @@ html {
 
 .content-container {
   display: flex;
-  padding: 1rem;
   border-radius: 5px;
   font-size: 7px;
   font-weight: 500;
@@ -225,13 +225,13 @@ html {
 /* Sky & Fly */
 .heading-container h2 span {
   color: #168b72;
-  font-size: 20px;
+  font-size: 35px;
 }
 
 /* Welcome aboard */
 .left span {
   color: #947751;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 900;
 }
 
@@ -242,7 +242,9 @@ html {
 /* ------------------------------------ TEAM ------------------------------------------------------------------------------------------------------------------------------ */
 
 #team {
-  background-image: url(images/airplane1.png);
+  background-image: url(images/sky.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 20px;
 }
 
