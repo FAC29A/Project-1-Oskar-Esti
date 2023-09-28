@@ -39,7 +39,7 @@ This project is the culmination of our efforts as a team, with Esti and Oskar at
 
 <!--Pros & Cons ICON --> <div align="center">
   <a>
-    <img src="images/prosandcons.png" alt="Logo" width="80" height="80">
+    <img src="images/pros.png" alt="Logo" width="80" height="80">
   </a> <br >
 
 ## Pros and Cons
