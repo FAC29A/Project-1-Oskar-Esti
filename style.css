@@ -153,10 +153,10 @@ html {
 }
 
 .cloud {
-  height: 60%;
+  height: 90%;
   cursor: pointer;
   position: absolute;
-  animation: cloud 12s infinite;
+  animation: cloud 7s infinite;
 }
 @keyframes cloud {
   0% {
@@ -367,9 +367,8 @@ h2 {
       }
 
     .cloud {
-        height: 40%;
+        height: 90%;
         cursor: pointer;
-        position: absolute;
         animation: cloud 12s infinite;
       }
 /* ABOUT */
