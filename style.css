@@ -90,7 +90,6 @@ a:hover {
 
 #home {
   display: flex;
-  padding: 5%;
   background-size: 30%;
   align-items: 10%;
   background-position: right;
@@ -242,10 +241,13 @@ html {
 /* ------------------------------------ TEAM ------------------------------------------------------------------------------------------------------------------------------ */
 
 #team {
-  background-image: url(images/sky.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 20px;
+    background-image: url(images/airplane4.png);
+  background-color: #168b72;
+  background-repeat:no-repeat;
+  background-size:25%;
+  padding-left: 5%;
+  padding-right: 5%;
+
 }
 
 h2 {
@@ -334,3 +336,8 @@ h2 {
     font-size: 10px;
     text-align: justify;
   }
+
+  /* ------------------------------------ MEDIA QUERIES ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+  @media (max-width: 365px)
