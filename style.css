@@ -205,7 +205,8 @@ html {
 /* ------------------------------------ ABOUT ------------------------------------------------------------------------------------------------------------------------------ */
 
 #about {
-  padding: 15%;
+  padding-right: 15%;  
+  padding-right: 15%;
   background-position: right;
   background-repeat: no-repeat;
   background: linear-gradient(

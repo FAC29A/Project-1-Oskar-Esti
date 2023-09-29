@@ -10,14 +10,14 @@ ScrollReveal({
     delay: 200,
   });
   
-  ScrollReveal().reveal(".h2, .card-container, heading-container h2 span", {
+  ScrollReveal().reveal(".h2, h3, .card-container, h2", {
     origin: "top",
   });
 
-  ScrollReveal().reveal("",
+  ScrollReveal().reveal(".card-container",
     { origin: "bottom" }
   );
-  ScrollReveal().reveal(" .btn, .card-container, .left", {
+  ScrollReveal().reveal(" .btn, .left", {
     origin: "left",
   });
   ScrollReveal().reveal(".right, .introduction-container", {
