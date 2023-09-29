@@ -304,7 +304,7 @@ h2 {
 
 .member-info {
   display: none;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(47, 29, 63, 0.8);
   color: #fff;
   position: absolute;
   bottom: 0;
@@ -340,4 +340,64 @@ h2 {
   /* ------------------------------------ MEDIA QUERIES ------------------------------------------------------------------------------------------------------------------------------ */
 
 
-  @media (max-width: 365px)
+  @media (max-width: 1490px) {
+
+    a {
+        font-size: 1.4rem;
+       
+      }
+
+    #home {
+        display: flex;
+        background-size: 30%;
+        align-items: 20%;
+        padding: 15%;
+      }
+
+      .heading-container h1 {
+        font-size: 50px;
+      
+      }
+
+    .cloud {
+        height: 40%;
+        cursor: pointer;
+        position: absolute;
+        animation: cloud 12s infinite;
+      }
+
+      .airplane2 {
+        height: 400px;
+      }
+
+      .left {
+        font-size: 20px;
+      
+      }
+
+      #team {
+      
+      background-size:20%;
+      padding-left: 8%;
+      padding-right: 8%;
+      }
+
+      .card {
+        height: 200px;
+        width: 285px;
+      }
+
+      .team-img {
+        height: 200px;
+        width: 285px;
+      }
+
+      .card:hover {
+        transform: scale(2.5);
+      }
+
+      .member-info li {
+        font-size: 7px;
+        text-align: justify;
+      }
+  }
