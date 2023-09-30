@@ -394,6 +394,11 @@ h2 {
   flex-wrap: wrap;
 }
 
+.icon {
+  height: 1rem;
+  margin-right: 0.7rem;
+}
+
 fieldset {
   margin: 0;
   display: flex;
