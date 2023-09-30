@@ -342,6 +342,51 @@ h2 {
   text-align: justify;
 }
 
+/* ------------------------------------ PROJECTS ------------------------------------------------------------------------------------------------------------------------------ */
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+
+#projects .content-container {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / span 4;
+}
+
+#carousel-container {
+  margin-top: 1rem;
+  display: flex;
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+  border: solid 2px black;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+#carousel-img {
+  border: solid 2px black;
+  height: 90%;
+  width: 400px;
+}
+
+.carousel-button {
+  height: 10%;
+  min-height: 50px;
+  background-color: white;
+}
+
+.carousel-button:hover {
+  background-color: grey;
+}
+
+.carousel-button:active {
+  translate: 2px 2px;
+}
+
 /* ------------------------------------ CONTACT ------------------------------------------------------------------------------------------------------------------------------ */
 #contact {
   display: grid;
