@@ -2,7 +2,6 @@ html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   font-family: Didot, serif;
-
 }
 
 body {
@@ -205,7 +204,7 @@ html {
 /* ------------------------------------ ABOUT ------------------------------------------------------------------------------------------------------------------------------ */
 
 #about {
-  padding-right: 15%;  
+  padding-right: 15%;
   padding-right: 15%;
   background-position: right;
   background-repeat: no-repeat;
@@ -220,7 +219,7 @@ html {
 .content-container {
   display: flex;
   border-radius: 5px;
-  font-size: 7px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -246,13 +245,12 @@ html {
 /* ------------------------------------ TEAM ------------------------------------------------------------------------------------------------------------------------------ */
 
 #team {
-    background-image: url(images/airplane4.png);
+  background-image: url(images/airplane4.png);
   background-color: #168b72;
-  background-repeat:no-repeat;
-  background-size:25%;
+  background-repeat: no-repeat;
+  background-size: 25%;
   padding-left: 5%;
   padding-right: 5%;
-
 }
 
 h2 {
@@ -340,126 +338,270 @@ h2 {
 }
 
 .member-info li {
-    font-size: 10px;
-    text-align: justify;
-  }
+  font-size: 10px;
+  text-align: justify;
+}
 
-  /* ------------------------------------ MEDIA QUERIES ------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------ CONTACT ------------------------------------------------------------------------------------------------------------------------------ */
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: #168b72;
+}
+
+#contact h2 {
+  text-align: left;
+}
+
+#contact .content-container {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  margin-right: 1rem;
+}
+
+#contact-container {
+  display: flex;
+  justify-content: stretch;
+  z-index: 1;
+  background-color: grey;
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 2;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+#contact-list {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+}
+
+#contact ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-form {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  flex-wrap: wrap;
+}
+
+fieldset {
+  margin: 0;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  border: solid 2px black;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
+  position: relative;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.contact-row:first-of-type {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  display: block;
+  border: 1px solid black;
+  background: white;
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+input {
+  height: 30px;
+}
+
+textarea {
+  height: 60%;
+  width: 100%;
+  resize: none;
+  overflow-y: auto;
+}
+
+label {
+  margin-bottom: 0.8rem;
+  display: block;
+  font-size: 1rem;
+}
+
+.send-button {
+  display: inline-flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
+  background: grey;
+  align-items: center;
+  font-weight: bold;
+  column-gap: 5px;
+  min-width: 10em;
+  width: 50%;
+  max-width: 200px;
+  min-height: 2rem;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: white;
+  color: blue;
+}
+
+.send-button:hover svg.bow-arrow path {
+  stroke: blue;
+}
+
+.send-button:active {
+  box-shadow: 0px -3px 5px #666;
+  transform: translate(2px, 2px);
+}
+
+.contact-input-1 {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact-input-2 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+
+/* ------------------------------------ MEDIA QUERIES ------------------------------------------------------------------------------------------------------------------------------ */
 
 /*========================= SIZE 1490PX */
-  @media (max-width: 1490px) {
-
-    /* HEADER */
-    a {
-        font-size: 1.4rem;
-       
-      }
-/* HOME */
-    #home {
-        display: flex;
-        background-size: 30%;
-        align-items: 20%;
-        padding: 15%;
-      }
-
-      .heading-container h1 {
-        font-size: 50px;
-      
-      }
-
-    .cloud {
-        height: 90%;
-        cursor: pointer;
-        animation: cloud 12s infinite;
-      }
-/* ABOUT */
-      .airplane2 {
-        height: 400px;
-      }
-
-      .left {
-        font-size: 20px;
-      
-      }
-/* TEAM */
-      #team {
-      
-      background-size:20%;
-      padding-left: 8%;
-      padding-right: 8%;
-      }
-
-      .card {
-        height: 200px;
-        width: 285px;
-      }
-
-      .team-img {
-        height: 200px;
-        width: 285px;
-      }
-
-      .card:hover {
-        transform: scale(2.5);
-      }
-
-      .member-info li {
-        font-size: 7px;
-        text-align: justify;
-      }
+@media (max-width: 1490px) {
+  /* HEADER */
+  a {
+    font-size: 1.4rem;
+  }
+  /* HOME */
+  #home {
+    display: flex;
+    background-size: 30%;
+    align-items: 20%;
+    padding: 15%;
   }
 
-  /*========================= SIZE 1164PX */
-  @media (max-width: 1164px) {
-        /* HEADER */
-    a {
-        font-size: 1.2rem;
-       
-      }
+  .heading-container h1 {
+    font-size: 50px;
+  }
 
-    /* HOME */
-      .airplane {
-        height: 100px;
+  .cloud {
+    height: 90%;
+    cursor: pointer;
+    animation: cloud 12s infinite;
+  }
+  /* ABOUT */
+  .airplane2 {
+    height: 400px;
+  }
 
-      }
+  .left {
+    font-size: 20px;
+  }
+  /* TEAM */
+  #team {
+    background-size: 20%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 
-      .heading-container h1 {
-        font-size: 40px;
-      
-      }
+  .card {
+    height: 200px;
+    width: 285px;
+  }
 
-      .btn {
-        padding: 0.5rem 2.8rem;
-        font-size: 1.5rem;
-      }
+  .team-img {
+    height: 200px;
+    width: 285px;
+  }
 
-      /* ABOUT */
+  .card:hover {
+    transform: scale(2.5);
+  }
 
-      .airplane2 {
-        height: 350px;
-      }
+  .member-info li {
+    font-size: 7px;
+    text-align: justify;
+  }
+}
 
-      .left {
-        font-size: 18px;
-      
-      }
+/*========================= SIZE 1164PX */
+@media (max-width: 1164px) {
+  /* HEADER */
+  a {
+    font-size: 1.2rem;
+  }
 
-      /* TEAM */
-      #team {
-      
-        background-size:20%;
-        padding-left: 10%;
-        padding-right: 14%;
-        }
+  /* HOME */
+  .airplane {
+    height: 100px;
+  }
 
-        /* team text */
-#team-information {
+  .heading-container h1 {
+    font-size: 40px;
+  }
+
+  .btn {
+    padding: 0.5rem 2.8rem;
+    font-size: 1.5rem;
+  }
+
+  /* ABOUT */
+
+  .airplane2 {
+    height: 350px;
+  }
+
+  .left {
+    font-size: 18px;
+  }
+
+  /* TEAM */
+  #team {
+    background-size: 20%;
+    padding-left: 10%;
+    padding-right: 14%;
+  }
+
+  /* team text */
+  #team-information {
     font-size: 15px;
   }
 
   .card-container {
     padding-left: 5%;
-    } 
+  }
 }
 
-  /*========================= SIZE 1164PX */
+/*========================= SIZE 1164PX */

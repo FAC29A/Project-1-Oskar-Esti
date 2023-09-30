@@ -165,17 +165,51 @@
       <!-- ------------------------------------------------------------------CONTACT---------------------------------------------------------------------------- -->
 
       <section id="contact">
-        <div class="section-container">
-          <div class="heading-container">
+        <div class="content-container">
             <h2>Contact Us</h2>
-          </div>
-          <div class="content-container">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sunt
             excepturi, sit, dicta placeat provident cum qui dolorem, odio
             voluptatibus corporis alias architecto exercitationem nesciunt
             adipisci maxime velit cumque veniam.
           </div>
-        </div>
+          <div id="contact-list">
+            <ul>
+              <li>Phone</li>
+              <li>Email</li>
+              <li>Address</li>
+            </ul>
+          </div>
+          <div id="contact-container">
+            <form class="contact-form" method="post">
+              <fieldset>
+                <div class="contact-row">
+                  <div class="contact-input-1" data-id="full-name">
+                    <label for="name"> Your Name</label>
+                    <input id="name" placeholder="Enter your name" type="text" name="name" required="required">
+                  </div>
+                  <div class="contact-input-1" data-id="email">
+                    <label for="email"> Email Address</label>
+                    <input id="email" placeholder="Enter your email" type="email" name="_replyto" required="required">
+                  </div>
+                </div>
+                <div class="contact-row">
+                  <div class="contact-input-2" data-id="message">
+                    <label for="message"> Your Message</label>
+                    <textarea placeholder="Hi, I would like to enquire about..." id="message" name="message"
+                      required="required" rows="7"></textarea>
+                  </div>
+                </div>
+                <button class="send-button" type="submit" id="send-button" onclick="sendMail()">
+                  Send
+                  <svg width="72" height="22" viewBox="0 0 72 22" class="bow-arrow">
+                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="0"
+                      d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8">
+                    </path>
+                  </svg>
+                </button>
+              </fieldset>
+            </form>
+          </div>
       </section>
     </main>
     <footer></footer>
