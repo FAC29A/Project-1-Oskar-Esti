@@ -9,6 +9,7 @@ body {
 }
 
 section {
+  width: max-content;
   height: 100vh;
   padding: 10rem 9% 2rem;
 }
@@ -206,6 +207,7 @@ html {
 #about {
   padding-right: 15%;
   padding-right: 15%;
+
   background-position: right;
   background-repeat: no-repeat;
   background: linear-gradient(
@@ -654,4 +656,35 @@ label {
   }
 }
 
-/*========================= SIZE 1164PX */
+/*========================= SIZE 400PX */
+@media (max-width: 400px) {
+  .section {
+    height: 60vh;
+  }
+
+  /* HOME */
+
+  #home {
+    display: flex;
+    column-count: initial;
+  }
+  .airplane {
+    height: 30px;
+    padding-right: 30rem;
+  }
+
+  .cloud {
+    padding-top: 460%;
+    padding-right: 100px;
+  }
+
+  .heading-container h1 {
+    font-size: 20px;
+    padding: 15%;
+  }
+
+  .btn {
+    padding: 0.5rem 2.8rem;
+    font-size: 1.5rem;
+  }
+}
