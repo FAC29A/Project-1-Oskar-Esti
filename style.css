@@ -13,6 +13,7 @@ section {
   padding: 10rem 9% 2rem;
 }
 
+
 .section-container {
   display: flex;
   flex-direction: column;
@@ -28,6 +29,19 @@ section {
 
 .right {
   max-width: 40%;
+}
+
+.header.sticky {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-bottom: 0 none;
+}
+
+/* smartphone menu */
+#menu-icon {
+  font-size: 3.6rem;
+  color: black;
+  display: none;
+  cursor: pointer;
 }
 
 /* ------------------------------------ HEADER ------------------------------------------------------------------------------------------------------------------------------ */
@@ -608,6 +622,49 @@ label {
 /*========================= SIZE 1169PX */
 @media (max-width: 1169px) {
   /* HEADER */
+
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: #8dcbe7;
+    background: -webkit-linear-gradient(
+      to right,
+      #8dcbe7,
+      rgb(164, 132, 224)
+    );
+    background: linear-gradient(
+      to right,
+      #8868c2,
+      rgb(103, 209, 228),
+      #e5e6f7
+    );
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    font-size: 1.4rem;
+    margin: 3rem 0;
+  }
+
+  #header-branding {
+    display: inline-flex;
+    width:auto;
+  }
+
   a {
     font-size: 0.7rem;
   }
