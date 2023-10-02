@@ -568,8 +568,6 @@ label {
   }
 
   .cloud {
-    height: 90%;
-    cursor: pointer;
     animation: cloud 12s infinite;
   }
   /* ABOUT */
@@ -629,8 +627,6 @@ label {
     }
   
     .cloud {
-      padding-top: 460%;
-      padding-right: 100px;
     }
   
     .heading-container h1 {
@@ -677,9 +673,8 @@ label {
 /*========================= SIZE 463PX */
 @media (max-width: 463px) {
   .section {
+
     flex-direction: column;
-    height:40px;
-    width: 450px;
   }
 
   /* HOME */
@@ -687,19 +682,28 @@ label {
   #home {
     display: block;
   }
+
+  .left {
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+  }
   .airplane {
     height: 30px;
     padding-right: 30rem;
   }
 
   .cloud {
-    height: 150px;
-    width: 200px;
+    height: 50%;
+    width: 0%;
+    padding-top: 10%; 
+    padding-right: 10px;
   }
 
   .heading-container {
     display: block;
-  }
+
+}
 
   .heading-container h1 {
     font-size: 18px;
@@ -715,10 +719,34 @@ font-size: 22px;
     font-size: 1rem;
     align-items:center;
   }
-}
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card:hover {
+    transform: scale(1.5);
+    height: 150%;
+  }
+ 
+  .card:hover .team-img {
+  }
+  .content-container {
+    display:block;
+
+    }
+
+    .content-container .left {
+text-align: justify;  
+      }
+  
+
+  }
+
+ 
+
+
+
 
 /*========================= SIZE 273PX */
-@media (max-width: 273px) {
-  .section {
-padding: ;  }
-}
