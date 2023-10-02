@@ -13,7 +13,6 @@ section {
   padding: 10rem 9% 2rem;
 }
 
-
 .section-container {
   display: flex;
   flex-direction: column;
@@ -29,19 +28,6 @@ section {
 
 .right {
   max-width: 40%;
-}
-
-.header.sticky {
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
-  border-bottom: 0 none;
-}
-
-/* smartphone menu */
-#menu-icon {
-  font-size: 3.6rem;
-  color: black;
-  display: none;
-  cursor: pointer;
 }
 
 /* ------------------------------------ HEADER ------------------------------------------------------------------------------------------------------------------------------ */
@@ -582,6 +568,8 @@ label {
   }
 
   .cloud {
+    height: 90%;
+    cursor: pointer;
     animation: cloud 12s infinite;
   }
   /* ABOUT */
@@ -621,81 +609,41 @@ label {
 
 /*========================= SIZE 1169PX */
 @media (max-width: 1169px) {
-  /* HEADER */
-
-  #menu-icon {
-    display: block;
-  }
-
-  .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem 3%;
-    background: #8dcbe7;
-    background: -webkit-linear-gradient(
-      to right,
-      #8dcbe7,
-      rgb(164, 132, 224)
-    );
-    background: linear-gradient(
-      to right,
-      #8868c2,
-      rgb(103, 209, 228),
-      #e5e6f7
-    );
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    display: none;
-  }
-
-
-  .navbar.active {
-    display: block;
-  }
-  .navbar a {
-    display: block;
-    font-size: 1.4rem;
-    margin: 3rem 0;
-  }
-
-  #header-branding {
-    display: inline-flex;
-    width:auto;
-  }
-
-  a {
+   /* HEADER */
+   a {
     font-size: 0.7rem;
   }
-  .section {
-    height: auto;
-  }
+    .section {
+      height: auto;
+    }
+  
+    /* HOME */
+  
+    #home {
+      display: flex;
+      column-count: initial;
+    }
+    .airplane {
+      height: 60px;
+    
+    }
+  
+    .cloud {
+      padding-top: 460%;
+      padding-right: 100px;
+    }
+  
+    .heading-container h1 {
+      font-size: 20px;
+      padding: 15%;
+    }
+  
+    .btn {
+      padding: 0.5rem 2.8rem;
+      font-size: 1.5rem;
+    }
 
-  /* HOME */
-
-  #home {
-    display: flex;
-    column-count: initial;
-  }
-  .airplane {
-    height: 60px;
-  }
-
-  .cloud {
-  }
-
-  .heading-container h1 {
-    font-size: 20px;
-    padding: 15%;
-  }
-
-  .btn {
-    padding: 0.5rem 2.8rem;
-    font-size: 1.5rem;
-  }
-
-  /* TEAM */
+     /* TEAM */
   #team {
     background-size: 20%;
     padding-left: 8%;
@@ -724,15 +672,14 @@ label {
   .member-info h4 {
     font-size: 10px;
   }
-}
+  }
 
 /*========================= SIZE 463PX */
 @media (max-width: 463px) {
-  section {
-    min-height: 100vh;
-    height: auto;
+  .section {
     flex-direction: column;
-    overflow: hidden;
+    height:40px;
+    width: 450px;
   }
 
   /* HOME */
@@ -740,22 +687,14 @@ label {
   #home {
     display: block;
   }
-
-  .left {
-    text-align: center;
-    align-items: center;
-    max-width: 100%;
-  }
   .airplane {
     height: 30px;
     padding-right: 30rem;
   }
 
   .cloud {
-    height: 50%;
-    width: 0%;
-    padding-top: 10%;
-    padding-right: 10px;
+    height: 150px;
+    width: 200px;
   }
 
   .heading-container {
@@ -767,34 +706,19 @@ label {
   }
 
   .heading-container h1 span {
-    font-size: 22px;
+font-size: 22px;
   }
+
 
   .btn {
     padding: 0.2rem 1rem;
     font-size: 1rem;
-    align-items: center;
-  }
-
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .card:hover {
-    transform: scale(1.5);
-    height: 150%;
-  }
-
-  .card:hover .team-img {
-  }
-  .content-container {
-    display: block;
-  }
-
-  .content-container .left {
-    text-align: justify;
+    align-items:center;
   }
 }
 
 /*========================= SIZE 273PX */
+@media (max-width: 273px) {
+  .section {
+padding: ;  }
+}
