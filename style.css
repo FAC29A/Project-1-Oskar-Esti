@@ -607,39 +607,38 @@ label {
 
 /*========================= SIZE 1169PX */
 @media (max-width: 1169px) {
-   /* HEADER */
-   a {
+  /* HEADER */
+  a {
     font-size: 0.7rem;
   }
-    .section {
-      height: auto;
-    }
-  
-    /* HOME */
-  
-    #home {
-      display: flex;
-      column-count: initial;
-    }
-    .airplane {
-      height: 60px;
-    
-    }
-  
-    .cloud {
-    }
-  
-    .heading-container h1 {
-      font-size: 20px;
-      padding: 15%;
-    }
-  
-    .btn {
-      padding: 0.5rem 2.8rem;
-      font-size: 1.5rem;
-    }
+  .section {
+    height: auto;
+  }
 
-     /* TEAM */
+  /* HOME */
+
+  #home {
+    display: flex;
+    column-count: initial;
+  }
+  .airplane {
+    height: 60px;
+  }
+
+  .cloud {
+  }
+
+  .heading-container h1 {
+    font-size: 20px;
+    padding: 15%;
+  }
+
+  .btn {
+    padding: 0.5rem 2.8rem;
+    font-size: 1.5rem;
+  }
+
+  /* TEAM */
   #team {
     background-size: 20%;
     padding-left: 8%;
@@ -668,13 +667,15 @@ label {
   .member-info h4 {
     font-size: 10px;
   }
-  }
+}
 
 /*========================= SIZE 463PX */
 @media (max-width: 463px) {
-  .section {
-
+  section {
+    min-height: 100vh;
+    height: auto;
     flex-direction: column;
+    overflow: hidden;
   }
 
   /* HOME */
@@ -696,28 +697,26 @@ label {
   .cloud {
     height: 50%;
     width: 0%;
-    padding-top: 10%; 
+    padding-top: 10%;
     padding-right: 10px;
   }
 
   .heading-container {
     display: block;
-
-}
+  }
 
   .heading-container h1 {
     font-size: 18px;
   }
 
   .heading-container h1 span {
-font-size: 22px;
+    font-size: 22px;
   }
-
 
   .btn {
     padding: 0.2rem 1rem;
     font-size: 1rem;
-    align-items:center;
+    align-items: center;
   }
 
   .card-container {
@@ -729,24 +728,16 @@ font-size: 22px;
     transform: scale(1.5);
     height: 150%;
   }
- 
+
   .card:hover .team-img {
   }
   .content-container {
-    display:block;
-
-    }
-
-    .content-container .left {
-text-align: justify;  
-      }
-  
-
+    display: block;
   }
 
- 
-
-
-
+  .content-container .left {
+    text-align: justify;
+  }
+}
 
 /*========================= SIZE 273PX */
