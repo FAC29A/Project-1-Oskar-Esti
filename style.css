@@ -607,65 +607,85 @@ label {
   }
 }
 
-/*========================= SIZE 1164PX */
-@media (max-width: 1164px) {
-  /* HEADER */
-  a {
-    font-size: 1.2rem;
+/*========================= SIZE 1169PX */
+@media (max-width: 1169px) {
+   /* HEADER */
+   a {
+    font-size: 0.7rem;
   }
+    .section {
+      height: auto;
+    }
+  
+    /* HOME */
+  
+    #home {
+      display: flex;
+      column-count: initial;
+    }
+    .airplane {
+      height: 60px;
+    
+    }
+  
+    .cloud {
+      padding-top: 460%;
+      padding-right: 100px;
+    }
+  
+    .heading-container h1 {
+      font-size: 20px;
+      padding: 15%;
+    }
+  
+    .btn {
+      padding: 0.5rem 2.8rem;
+      font-size: 1.5rem;
+    }
 
-  /* HOME */
-  .airplane {
-    height: 100px;
-  }
-
-  .heading-container h1 {
-    font-size: 40px;
-  }
-
-  .btn {
-    padding: 0.5rem 2.8rem;
-    font-size: 1.5rem;
-  }
-
-  /* ABOUT */
-
-  .airplane2 {
-    height: 350px;
-  }
-
-  .left {
-    font-size: 18px;
-  }
-
-  /* TEAM */
+     /* TEAM */
   #team {
     background-size: 20%;
-    padding-left: 10%;
-    padding-right: 14%;
+    padding-left: 8%;
+    padding-right: 8%;
   }
 
-  /* team text */
-  #team-information {
-    font-size: 15px;
+  .card {
+    height: 180px;
+    width: 225px;
   }
 
-  .card-container {
-    padding-left: 5%;
+  .team-img {
+    height: 180px;
+    width: 225px;
   }
-}
 
-/*========================= SIZE 400PX */
-@media (max-width: 400px) {
+  .card:hover {
+    transform: scale(2.5);
+  }
+
+  .member-info li {
+    font-size: 6px;
+    text-align: justify;
+  }
+
+  .member-info h4 {
+    font-size: 10px;
+  }
+  }
+
+/*========================= SIZE 463PX */
+@media (max-width: 463px) {
   .section {
-    height: 60vh;
+    flex-direction: column;
+    height:40px;
+    width: 450px;
   }
 
   /* HOME */
 
   #home {
-    display: flex;
-    column-count: initial;
+    display: block;
   }
   .airplane {
     height: 30px;
@@ -673,17 +693,32 @@ label {
   }
 
   .cloud {
-    padding-top: 460%;
-    padding-right: 100px;
+    height: 150px;
+    width: 200px;
+  }
+
+  .heading-container {
+    display: block;
   }
 
   .heading-container h1 {
-    font-size: 20px;
-    padding: 15%;
+    font-size: 18px;
   }
 
-  .btn {
-    padding: 0.5rem 2.8rem;
-    font-size: 1.5rem;
+  .heading-container h1 span {
+font-size: 22px;
   }
+
+
+  .btn {
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+    align-items:center;
+  }
+}
+
+/*========================= SIZE 273PX */
+@media (max-width: 273px) {
+  .section {
+padding: ;  }
 }
