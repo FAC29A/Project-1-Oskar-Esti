@@ -674,7 +674,7 @@ label {
     height:fit-content;
     min-height: 100vh;
   }
-
+/* ABOUT */
   .about-text {
     left: 10%;
     height: 100%;
@@ -706,4 +706,28 @@ label {
 .member-info li {
   font-size: 10px;
 }
+
+
+/* ---------------CONTACT------------ */
+#contact {
+  display: block;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.contact-list { 
+ grid-row: 1;
+ flex-direction:column-reverse;
+
+}
+
+#contact .content-container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.contact-list ul h4 { 
+width: 100%;
+}
+
 }
