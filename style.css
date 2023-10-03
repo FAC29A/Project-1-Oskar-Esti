@@ -345,11 +345,11 @@ h2 {
 
 /* ------------------------------------ PROJECTS ------------------------------------------------------------------------------------------------------------------------------ */
 
-#projects {
+#fleet {
   display: block;
 }
 
-#projects .content-container {
+#fleet .content-container {
   justify-content: center;
 }
 
@@ -370,6 +370,7 @@ h2 {
   position: relative;
   margin: auto;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 /* Next & previous buttons */
