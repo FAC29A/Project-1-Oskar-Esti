@@ -17,7 +17,7 @@ ScrollReveal({
   ScrollReveal().reveal(".card-container",
     { origin: "bottom" }
   );
-  ScrollReveal().reveal(" .btn, .left", {
+  ScrollReveal().reveal(" .btn, .left, .about-text", {
     origin: "left",
   });
   ScrollReveal().reveal(".right, .introduction-container", {
