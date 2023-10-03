@@ -367,6 +367,13 @@ h2 {
 
 #fleet {
   display: block;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    rgb(233, 223, 223),
+    rgba(177, 185, 194, 0.432),
+    rgb(226, 220, 210),
+    rgba(194, 200, 206, 0.432)
+  );
 }
 
 #fleet .content-container {
