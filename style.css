@@ -157,8 +157,8 @@ html {
 
 .cloud {
   right: 2px;
-  position:relative;
-  overflow:hidden;
+  position: relative;
+  overflow: hidden;
   opacity: 0.8;
   width: 800px;
   height: calc(10vw + 500px);
@@ -256,7 +256,7 @@ html {
 .about-text {
   font-size: calc(0.8vw + 8px);
   height: 60%;
-  max-width: 50%
+  max-width: 50%;
 }
 
 .airplane2 {
@@ -281,7 +281,6 @@ h2 {
   font-size: calc(1.6vw + 8px);
 }
 
-
 /* SECOND TEXT: Certainly... */
 #team-information {
   display: block;
@@ -292,7 +291,6 @@ h2 {
 #team-members {
   display: block;
 }
-
 
 .card-container {
   display: grid;
@@ -383,6 +381,7 @@ h2 {
 
 .mySlides {
   display: none;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -480,7 +479,7 @@ h2 {
 #contact {
   background-image: url(images/sky.png);
   background-color: #c5b083;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -504,7 +503,6 @@ h2 {
 
 /* TEXT2 */
 #contact h4 {
- 
   padding: 5%;
   color: black;
   font-size: calc(1.2vw + 6px);
@@ -538,13 +536,12 @@ h2 {
   grid-column: 1;
 }
 
-
 #contact ul {
   color: black;
 
   height: 100%;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -562,13 +559,10 @@ h2 {
   height: 1.5rem;
   margin-right: 0.7rem;
   color: #c5b083;
-
 }
 
-
-
 fieldset {
-  border-style: none;;
+  border-style: none;
   border-radius: 20%;
   margin: 0;
   display: flex;
@@ -580,7 +574,6 @@ fieldset {
   width: 100%;
   height: 100%;
   padding: 40px;
-
 }
 
 .contact-row {
@@ -601,7 +594,6 @@ fieldset {
 input,
 textarea {
   font-family: inherit;
-
 }
 
 input {
@@ -648,7 +640,6 @@ label {
   background-color: white;
   color: #168b72;
   box-shadow: 0px -3px 5px #666;
-
 }
 
 .send-button:hover svg.bow-arrow path {
@@ -677,5 +668,4 @@ label {
 /* -------------------------------------------------------------------------------MEDIA QUERIES------------------------------------------------------ */
 
 @media (max-width: 550px) {
-
 }
