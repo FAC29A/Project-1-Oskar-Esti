@@ -349,8 +349,13 @@ h2 {
   display: block;
 }
 
+#projects .content-container {
+  justify-content: center;
+}
+
 .slideshow-container img {
   vertical-align: middle;
+  object-fit: cover;
   height: auto;
 }
 
@@ -360,7 +365,8 @@ h2 {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
+  max-width: 600px;
+  max-height: 400px;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -381,6 +387,7 @@ h2 {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  margin-left: 0;
 }
 
 /* Position the "next button" to the right */
