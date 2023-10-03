@@ -56,7 +56,7 @@ section {
   gap: 1rem;
 }
 
-/* LOGO */
+/* LOGO PIC */
 img {
   height: 70px;
 }
@@ -66,7 +66,7 @@ ul {
 }
 
 a {
-  font-size: 1.7rem;
+  font-size: calc(1vw + 5px);
   color: rgb(2, 4, 131);
   margin-left: 4rem;
   font-weight: 900;
@@ -108,7 +108,7 @@ a:hover {
 .airplane {
   position: absolute;
   padding-right: 100rem;
-  height: 150px;
+  height: calc(6vw + 20px);
   cursor: pointer;
   -webkit-animation: fly 4s linear 0s infinite;
   -moz-animation: 4s linear 0s infinite;
@@ -128,7 +128,7 @@ html {
   }
   75% {
     top: -500%;
-    left: 50%;
+    left: 80%;
     transform: translateX(30%);
     rotate: 10deg;
   }
@@ -152,7 +152,11 @@ html {
 }
 
 .cloud {
-  height: 90%;
+  position:relative;
+  overflow:hidden;
+
+  opacity: 0.8;
+  height: calc(40vw + 50px);
   cursor: pointer;
   position: absolute;
   animation: cloud 7s infinite;
@@ -175,21 +179,24 @@ html {
   display: flex;
 }
 
-.heading-container h1 {
-  font-size: 60px;
-  text-align: left;
-  padding-bottom: 7%;
-}
+/* SKY&FLY */
 .heading-container h1 span {
   color: #5de4c7;
-  font-size: 80px;
+  font-size: calc(4.3vw + 10px);
+}
+
+/* BLACK TEXT */
+.heading-container h1 {
+  font-size: calc(3.5vw + 10px);
+  text-align: left;
+  padding-bottom: 7%;
 }
 
 .btn {
   text-align: center;
   padding: 0.5rem 2.8rem;
   background: linear-gradient(to right, #d178e7, #e5e6f7);
-  font-size: 2rem;
+  font-size: calc(1vw + 10px);
   font-weight: 900;
   color: #503880;
   letter-spacing: 0.01rem;
@@ -217,36 +224,45 @@ html {
   );
 }
 
+/* FIRST TEXT: WELCOME TO... */
 .content-container {
   display: flex;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: calc(2vw + 6px);
   font-weight: 500;
 }
 
-/* Sky & Fly */
+/* FIRST TEXT: Sky & Fly */
 .heading-container h2 span {
   color: #168b72;
-  font-size: 35px;
+  font-size: calc(2.9vw + 12px);
   transition: transform 1.7s;
   transform-style: preserve-3d;
 }
 
-/* Welcome aboard */
-.left span {
+/* END OF PAGE TEXT: Welcome aboard */
+.about-text span {
   color: #947751;
-  font-size: 30px;
+  font-size: calc(1.6vw + 8px);
   font-weight: 900;
 }
 
+/* LONG TEXT */
+.about-text {
+  font-size: calc(0.8vw + 8px);
+  height: 60%;
+  max-width: 50%
+}
+
 .airplane2 {
-  height: 500px;
+  position: absolute;
+  width: calc(40vw + 20px);
+  height: auto;
 }
 
 /* ------------------------------------ TEAM ------------------------------------------------------------------------------------------------------------------------------ */
 
 #team {
-  background-image: url(images/airplane4.png);
   background-color: #168b72;
   background-repeat: no-repeat;
   background-size: 25%;
@@ -254,21 +270,24 @@ html {
   padding-right: 5%;
 }
 
+/* TEXT: MEET THE TEAM */
 h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: calc(1.6vw + 8px);
+}
+
+
+/* SECOND TEXT: Certainly... */
+#team-information {
+  display: block;
+  padding-left: 20%;
+  font-size: calc(0.7vw + 6px);
 }
 
 #team-members {
   display: block;
 }
 
-/* text */
-#team-information {
-  display: block;
-  padding-left: 20%;
-  font-size: 19px;
-}
 
 .card-container {
   display: grid;
@@ -288,8 +307,8 @@ h2 {
   box-shadow: 0 0 5rem rgb(255, 255, 255);
   overflow: hidden;
   display: flex;
-  height: 300px;
-  width: 400px;
+  width: calc(16vw + 6px);
+  height: auto;
   position: relative;
   border-radius: 4rem;
   overflow: hidden;
@@ -547,178 +566,8 @@ label {
   position: relative;
 }
 
-/* ------------------------------------ MEDIA QUERIES ------------------------------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------------------------------------------------MEDIA QUERIES------------------------------------------------------ */
 
-/*========================= SIZE 1490PX */
-@media (max-width: 1490px) {
-  /* HEADER */
-  a {
-    font-size: 1.4rem;
-  }
-  /* HOME */
-  #home {
-    display: flex;
-    background-size: 30%;
-    align-items: 20%;
-    padding: 15%;
-  }
+@media (max-width: 550px) {
 
-  .heading-container h1 {
-    font-size: 50px;
-  }
-
-  .cloud {
-    height: 90%;
-    cursor: pointer;
-    animation: cloud 12s infinite;
-  }
-  /* ABOUT */
-  .airplane2 {
-    height: 400px;
-  }
-
-  .left {
-    font-size: 20px;
-  }
-  /* TEAM */
-  #team {
-    background-size: 20%;
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-
-  .card {
-    height: 200px;
-    width: 285px;
-  }
-
-  .team-img {
-    height: 200px;
-    width: 285px;
-  }
-
-  .card:hover {
-    transform: scale(2.5);
-  }
-
-  .member-info li {
-    font-size: 7px;
-    text-align: justify;
-  }
-}
-
-/*========================= SIZE 1169PX */
-@media (max-width: 1169px) {
-   /* HEADER */
-   a {
-    font-size: 0.7rem;
-  }
-    .section {
-      height: auto;
-    }
-  
-    /* HOME */
-  
-    #home {
-      display: flex;
-      column-count: initial;
-    }
-    .airplane {
-      height: 60px;
-    
-    }
-  
-    .cloud {
-      padding-top: 460%;
-      padding-right: 100px;
-    }
-  
-    .heading-container h1 {
-      font-size: 20px;
-      padding: 15%;
-    }
-  
-    .btn {
-      padding: 0.5rem 2.8rem;
-      font-size: 1.5rem;
-    }
-
-     /* TEAM */
-  #team {
-    background-size: 20%;
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-
-  .card {
-    height: 180px;
-    width: 225px;
-  }
-
-  .team-img {
-    height: 180px;
-    width: 225px;
-  }
-
-  .card:hover {
-    transform: scale(2.5);
-  }
-
-  .member-info li {
-    font-size: 6px;
-    text-align: justify;
-  }
-
-  .member-info h4 {
-    font-size: 10px;
-  }
-  }
-
-/*========================= SIZE 463PX */
-@media (max-width: 463px) {
-  .section {
-    flex-direction: column;
-    height:40px;
-    width: 450px;
-  }
-
-  /* HOME */
-
-  #home {
-    display: block;
-  }
-  .airplane {
-    height: 30px;
-    padding-right: 30rem;
-  }
-
-  .cloud {
-    height: 150px;
-    width: 200px;
-  }
-
-  .heading-container {
-    display: block;
-  }
-
-  .heading-container h1 {
-    font-size: 18px;
-  }
-
-  .heading-container h1 span {
-font-size: 22px;
-  }
-
-
-  .btn {
-    padding: 0.2rem 1rem;
-    font-size: 1rem;
-    align-items:center;
-  }
-}
-
-/*========================= SIZE 273PX */
-@media (max-width: 273px) {
-  .section {
-padding: ;  }
 }
