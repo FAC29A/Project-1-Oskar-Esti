@@ -232,7 +232,7 @@ html {
 
 /* FIRST TEXT: WELCOME TO... */
 .content-container {
-  display: flex;
+  display:grid;
   border-radius: 5px;
   font-size: calc(2vw + 6px);
   font-weight: 500;
@@ -363,7 +363,7 @@ h2 {
   text-align: justify;
 }
 
-/* ------------------------------------ PROJECTS ------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------ FLEET ------------------------------------------------------------------------------------------------------------------------------ */
 
 #fleet {
   display: block;
@@ -669,4 +669,41 @@ label {
 /* -------------------------------------------------------------------------------MEDIA QUERIES------------------------------------------------------ */
 
 @media (max-width: 550px) {
+
+  section {
+    height:fit-content;
+    min-height: 100vh;
+  }
+
+  .about-text {
+    left: 10%;
+    height: 100%;
+    align-self: center;
+    max-width: 70%;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    width: 300px;
+    height: auto;
+  }
+
+  .card:hover {
+    transform: 
+    scale(1.2);
+  }
+
+  /* EACH MEMBER'S TITLE */
+.member-info h4 {
+  font-size: 14px;
+}
+
+/* EACH MEMBER'S TEXT */
+.member-info li {
+  font-size: 10px;
+}
 }
