@@ -98,6 +98,10 @@ a:hover {
   background: linear-gradient(white, white, white, #6b9ee0, #e5e6f7, white);
 }
 
+.left-home {
+  max-width: 40%;
+}
+
 .header-container {
   display: flex;
   flex-direction: row;
@@ -152,11 +156,12 @@ html {
 }
 
 .cloud {
+  right: 2px;
   position:relative;
   overflow:hidden;
-
   opacity: 0.8;
-  height: calc(40vw + 50px);
+  width: 800px;
+  height: calc(10vw + 500px);
   cursor: pointer;
   position: absolute;
   animation: cloud 7s infinite;
@@ -187,7 +192,7 @@ html {
 
 /* BLACK TEXT */
 .heading-container h1 {
-  font-size: calc(3.5vw + 10px);
+  font-size: calc(3vw + 10px);
   text-align: left;
   padding-bottom: 7%;
 }
@@ -421,12 +426,21 @@ h2 {
   color: #c5b083;
 }
 
-/* TEXT */
+/* TEXT1 */
 #contact h3 {
   color: #c5b083;
 
   font-size: calc(1.2vw + 6px);
-  font-weight: 400;
+  font-weight: 700;
+}
+
+/* TEXT2 */
+#contact h4 {
+ 
+  padding: 5%;
+  color: black;
+  font-size: calc(1.2vw + 6px);
+  font-weight: 500;
 }
 
 #contact .content-container {
@@ -458,7 +472,7 @@ h2 {
 
 
 #contact ul {
-  color: #c5b083;
+  color: black;
 
   height: 100%;
   display: flex;
