@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="style.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="JavaScript.js"></script>
+    <!-- <script src="JavaScript.js"></script> -->
     <link rel="icon" href="images/logo.jpeg">
+    
   </head>
 
   <body>
@@ -146,21 +147,40 @@
           </div>
         </div>
       </section>
-      <!-- ------------------------------------------------------------------PROJECTS---------------------------------------------------------------------------- -->
+      <!-- ------------------------------------------------------------------OUR FLEET---------------------------------------------------------------------------- -->
 
-      <section id="projects">
+      <section id="fleet">
         <div class="content-container">
-            <h2>Our Projects</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sunt
-              excepturi, sit, dicta placeat provident cum qui dolorem, odio
-              voluptatibus corporis alias architecto exercitationem nesciunt
-              adipisci maxime velit cumque veniam.</p>
+          <h2>Our Fleet</h2>
+        </div>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="images/slide1.jpg" style="width: 100%" />
           </div>
-          <div id="carousel-container">
-            <button class="carousel-button" id="previous">&larr;</button>
-            <div id="carousel-img"></div>
-            <button class="carousel-button" id="next">&rarr;</button>
+    
+          <div class="mySlides fade">
+            <img src="images/slide2.jpg" style="width: 100%" />
           </div>
+    
+          <div class="mySlides fade">
+            <img src="images/slide3.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/slide4.jpg" style="width: 100%" />
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+    
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
       </section>
       <!-- ------------------------------------------------------------------CONTACT---------------------------------------------------------------------------- -->
 
@@ -213,15 +233,12 @@
     </main>
     <footer></footer>
 
-        <!-- scroll reveal -->
-    
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- typed js -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-    <!--------- JavaScript --------->
-    <script src="JavaScript.js"></script>
 
   </body>
+          <!-- scroll reveal -->
+          <script src="https://unpkg.com/scrollreveal"></script>
+          <!-- typed js -->
+          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <!--------- JavaScript --------->
+      <script src="JavaScript.js"></script>
 </html>
