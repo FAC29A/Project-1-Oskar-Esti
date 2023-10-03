@@ -79,6 +79,7 @@ a {
 
 a.active {
   color: rgb(55, 221, 243);
+  background: none;
 }
 
 a:hover {
