@@ -56,7 +56,7 @@ section {
   gap: 1rem;
 }
 
-/* LOGO */
+/* LOGO PIC */
 img {
   height: 70px;
 }
@@ -66,7 +66,7 @@ ul {
 }
 
 a {
-  font-size: 1.7rem;
+  font-size: calc(1vw + 5px);
   color: rgb(2, 4, 131);
   margin-left: 4rem;
   font-weight: 900;
@@ -98,6 +98,10 @@ a:hover {
   background: linear-gradient(white, white, white, #6b9ee0, #e5e6f7, white);
 }
 
+.left-home {
+  max-width: 40%;
+}
+
 .header-container {
   display: flex;
   flex-direction: row;
@@ -108,7 +112,7 @@ a:hover {
 .airplane {
   position: absolute;
   padding-right: 100rem;
-  height: 150px;
+  height: calc(6vw + 20px);
   cursor: pointer;
   -webkit-animation: fly 4s linear 0s infinite;
   -moz-animation: 4s linear 0s infinite;
@@ -128,7 +132,7 @@ html {
   }
   75% {
     top: -500%;
-    left: 50%;
+    left: 80%;
     transform: translateX(30%);
     rotate: 10deg;
   }
@@ -152,7 +156,12 @@ html {
 }
 
 .cloud {
-  height: 90%;
+  right: 2px;
+  position:relative;
+  overflow:hidden;
+  opacity: 0.8;
+  width: 800px;
+  height: calc(10vw + 500px);
   cursor: pointer;
   position: absolute;
   animation: cloud 7s infinite;
@@ -175,21 +184,24 @@ html {
   display: flex;
 }
 
-.heading-container h1 {
-  font-size: 60px;
-  text-align: left;
-  padding-bottom: 7%;
-}
+/* SKY&FLY */
 .heading-container h1 span {
   color: #5de4c7;
-  font-size: 80px;
+  font-size: calc(4.3vw + 10px);
+}
+
+/* BLACK TEXT */
+.heading-container h1 {
+  font-size: calc(3vw + 10px);
+  text-align: left;
+  padding-bottom: 7%;
 }
 
 .btn {
   text-align: center;
   padding: 0.5rem 2.8rem;
   background: linear-gradient(to right, #d178e7, #e5e6f7);
-  font-size: 2rem;
+  font-size: calc(1vw + 10px);
   font-weight: 900;
   color: #503880;
   letter-spacing: 0.01rem;
@@ -217,36 +229,45 @@ html {
   );
 }
 
+/* FIRST TEXT: WELCOME TO... */
 .content-container {
   display: flex;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: calc(2vw + 6px);
   font-weight: 500;
 }
 
-/* Sky & Fly */
+/* FIRST TEXT: Sky & Fly */
 .heading-container h2 span {
   color: #168b72;
-  font-size: 35px;
+  font-size: calc(2.9vw + 12px);
   transition: transform 1.7s;
   transform-style: preserve-3d;
 }
 
-/* Welcome aboard */
-.left span {
+/* END OF PAGE TEXT: Welcome aboard */
+.about-text span {
   color: #947751;
-  font-size: 30px;
+  font-size: calc(1.6vw + 8px);
   font-weight: 900;
 }
 
+/* LONG TEXT */
+.about-text {
+  font-size: calc(0.8vw + 8px);
+  height: 60%;
+  max-width: 50%
+}
+
 .airplane2 {
-  height: 500px;
+  position: absolute;
+  width: calc(40vw + 20px);
+  height: auto;
 }
 
 /* ------------------------------------ TEAM ------------------------------------------------------------------------------------------------------------------------------ */
 
 #team {
-  background-image: url(images/airplane4.png);
   background-color: #168b72;
   background-repeat: no-repeat;
   background-size: 25%;
@@ -254,21 +275,24 @@ html {
   padding-right: 5%;
 }
 
+/* TEXT: MEET THE TEAM */
 h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: calc(1.6vw + 8px);
+}
+
+
+/* SECOND TEXT: Certainly... */
+#team-information {
+  display: block;
+  padding-left: 20%;
+  font-size: calc(0.7vw + 6px);
 }
 
 #team-members {
   display: block;
 }
 
-/* text */
-#team-information {
-  display: block;
-  padding-left: 20%;
-  font-size: 19px;
-}
 
 .card-container {
   display: grid;
@@ -288,8 +312,8 @@ h2 {
   box-shadow: 0 0 5rem rgb(255, 255, 255);
   overflow: hidden;
   display: flex;
-  height: 300px;
-  width: 400px;
+  width: calc(16vw + 6px);
+  height: auto;
   position: relative;
   border-radius: 4rem;
   overflow: hidden;
@@ -329,17 +353,14 @@ h2 {
   padding: 1.5rem;
 }
 
-.member-info h2 {
-  font-size: 15px;
+/* EACH MEMBER'S TITLE */
+.member-info h4 {
+  font-size: calc(0.6vw + 6px);
 }
 
-.member-info p {
-  font-size: 10px;
-  text-align: justify;
-}
-
+/* EACH MEMBER'S TEXT */
 .member-info li {
-  font-size: 10px;
+  font-size: calc(0.2vw + 6px);
   text-align: justify;
 }
 
@@ -353,6 +374,7 @@ h2 {
   justify-content: center;
 }
 
+/* improve-carousel */
 .slideshow-container img {
   vertical-align: middle;
   object-fit: cover;
@@ -361,7 +383,6 @@ h2 {
 
 .mySlides {
   display: none;
-}
 
 /* Slideshow container */
 .slideshow-container {
@@ -382,7 +403,7 @@ h2 {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: #white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -457,29 +478,56 @@ h2 {
 
 /* ------------------------------------ CONTACT ------------------------------------------------------------------------------------------------------------------------------ */
 #contact {
+  background-image: url(images/sky.png);
+  background-color: #c5b083;
+  background-size:cover;
+  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-color: #168b72;
 }
 
+/* Be in Touch With Us */
 #contact h2 {
-  text-align: left;
+  font-size: calc(2vw + 6px);
+  text-align: center;
+  color: #c5b083;
+}
+
+/* TEXT1 */
+#contact h3 {
+  color: #c5b083;
+
+  font-size: calc(1.2vw + 6px);
+  font-weight: 700;
+}
+
+/* TEXT2 */
+#contact h4 {
+ 
+  padding: 5%;
+  color: black;
+  font-size: calc(1.2vw + 6px);
+  font-weight: 500;
 }
 
 #contact .content-container {
   display: flex;
   flex-direction: column;
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 4;
   grid-row: 1;
-  margin-right: 1rem;
 }
 
 #contact-container {
+  width: calc(1hw + 10px);
+  opacity: 0.9;
+  border-radius: 20%;
+  box-shadow: 0 0 2rem #c5b083;
+  border-style: none;
   display: flex;
   justify-content: stretch;
   z-index: 1;
-  background-color: grey;
+  background-color: #a09168;
   grid-column: 3 / span 2;
   grid-row: 2 / span 2;
   max-width: 800px;
@@ -488,17 +536,20 @@ h2 {
 
 #contact-list {
   grid-column: 1;
-  grid-row: 2 / span 2;
 }
 
+
 #contact ul {
+  color: black;
+
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   justify-content: space-around;
 }
 
 .contact-form {
+  border-style: none;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -508,11 +559,17 @@ h2 {
 }
 
 .icon {
-  height: 1rem;
+  height: 1.5rem;
   margin-right: 0.7rem;
+  color: #c5b083;
+
 }
 
+
+
 fieldset {
+  border-style: none;;
+  border-radius: 20%;
   margin: 0;
   display: flex;
   box-sizing: border-box;
@@ -523,7 +580,7 @@ fieldset {
   width: 100%;
   height: 100%;
   padding: 40px;
-  border: solid 2px black;
+
 }
 
 .contact-row {
@@ -544,12 +601,7 @@ fieldset {
 input,
 textarea {
   font-family: inherit;
-  display: block;
-  border: 1px solid black;
-  background: white;
-  box-sizing: border-box;
-  font-size: 1rem;
-  padding: 10px;
+
 }
 
 input {
@@ -557,10 +609,12 @@ input {
 }
 
 textarea {
+  padding: 1%;
   height: 60%;
   width: 100%;
   resize: none;
   overflow-y: auto;
+  border-style: none;
 }
 
 label {
@@ -575,7 +629,8 @@ label {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.9em;
-  background: grey;
+  background: #168b72;
+  color: white;
   align-items: center;
   font-weight: bold;
   column-gap: 5px;
@@ -584,11 +639,16 @@ label {
   max-width: 200px;
   min-height: 2rem;
   cursor: pointer;
+  box-shadow: 0px -3px 5px #666;
+  border-style: none;
+  border-radius: 40%;
 }
 
 .send-button:hover {
   background-color: white;
-  color: blue;
+  color: #168b72;
+  box-shadow: 0px -3px 5px #666;
+
 }
 
 .send-button:hover svg.bow-arrow path {
@@ -614,197 +674,8 @@ label {
   position: relative;
 }
 
-/* ------------------------------------ MEDIA QUERIES ------------------------------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------------------------------------------------MEDIA QUERIES------------------------------------------------------ */
 
-/*========================= SIZE 1490PX */
-@media (max-width: 1490px) {
-  /* HEADER */
-  a {
-    font-size: 1.4rem;
-  }
-  /* HOME */
-  #home {
-    display: flex;
-    background-size: 30%;
-    align-items: 20%;
-    padding: 15%;
-  }
+@media (max-width: 550px) {
 
-  .heading-container h1 {
-    font-size: 50px;
-  }
-
-  .cloud {
-    animation: cloud 12s infinite;
-  }
-  /* ABOUT */
-  .airplane2 {
-    height: 400px;
-  }
-
-  .left {
-    font-size: 20px;
-  }
-  /* TEAM */
-  #team {
-    background-size: 20%;
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-
-  .card {
-    height: 200px;
-    width: 285px;
-  }
-
-  .team-img {
-    height: 200px;
-    width: 285px;
-  }
-
-  .card:hover {
-    transform: scale(2.5);
-  }
-
-  .member-info li {
-    font-size: 7px;
-    text-align: justify;
-  }
 }
-
-/*========================= SIZE 1169PX */
-@media (max-width: 1169px) {
-  /* HEADER */
-  a {
-    font-size: 0.7rem;
-  }
-  .section {
-    height: auto;
-  }
-
-  /* HOME */
-
-  #home {
-    display: flex;
-    column-count: initial;
-  }
-  .airplane {
-    height: 60px;
-  }
-
-  .cloud {
-  }
-
-  .heading-container h1 {
-    font-size: 20px;
-    padding: 15%;
-  }
-
-  .btn {
-    padding: 0.5rem 2.8rem;
-    font-size: 1.5rem;
-  }
-
-  /* TEAM */
-  #team {
-    background-size: 20%;
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-
-  .card {
-    height: 180px;
-    width: 225px;
-  }
-
-  .team-img {
-    height: 180px;
-    width: 225px;
-  }
-
-  .card:hover {
-    transform: scale(2.5);
-  }
-
-  .member-info li {
-    font-size: 6px;
-    text-align: justify;
-  }
-
-  .member-info h4 {
-    font-size: 10px;
-  }
-}
-
-/*========================= SIZE 463PX */
-@media (max-width: 463px) {
-  section {
-    min-height: 100vh;
-    height: auto;
-    flex-direction: column;
-    overflow: hidden;
-  }
-
-  /* HOME */
-
-  #home {
-    display: block;
-  }
-
-  .left {
-    text-align: center;
-    align-items: center;
-    max-width: 100%;
-  }
-  .airplane {
-    height: 30px;
-    padding-right: 30rem;
-  }
-
-  .cloud {
-    height: 50%;
-    width: 0%;
-    padding-top: 10%;
-    padding-right: 10px;
-  }
-
-  .heading-container {
-    display: block;
-  }
-
-  .heading-container h1 {
-    font-size: 18px;
-  }
-
-  .heading-container h1 span {
-    font-size: 22px;
-  }
-
-  .btn {
-    padding: 0.2rem 1rem;
-    font-size: 1rem;
-    align-items: center;
-  }
-
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .card:hover {
-    transform: scale(1.5);
-    height: 150%;
-  }
-
-  .card:hover .team-img {
-  }
-  .content-container {
-    display: block;
-  }
-
-  .content-container .left {
-    text-align: justify;
-  }
-}
-
-/*========================= SIZE 273PX */

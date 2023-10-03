@@ -19,7 +19,7 @@ ScrollReveal().reveal(".right, .introduction-container", {
   origin: "right",
 });
 
-// -------------Carousel----------------------------
+// --------------------------CAROUSEL-------------------------------
 
 let slideIndex = 1;
 
@@ -50,3 +50,4 @@ function showSlides(n) {
 document.addEventListener("DOMContentLoaded", function () {
   showSlides(slideIndex);
 });
+
