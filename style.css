@@ -232,7 +232,7 @@ html {
 
 /* FIRST TEXT: WELCOME TO... */
 .content-container {
-  display:grid;
+  display:flex;
   border-radius: 5px;
   font-size: calc(2vw + 6px);
   font-weight: 500;
@@ -687,6 +687,10 @@ label {
     height: 100%;
     align-self: center;
     max-width: 70%;
+  }
+
+  .content-container {
+    display:grid;
   }
 
   .card-container {
