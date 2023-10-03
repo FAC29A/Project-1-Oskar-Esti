@@ -11,11 +11,13 @@ ScrollReveal().reveal(".h2, h3, .card-container, h2", {
   origin: "top",
 });
 
-ScrollReveal().reveal(".card-container", { origin: "bottom" });
-ScrollReveal().reveal(" .btn, .left", {
+ScrollReveal().reveal(".card-container, .slideshow-container", { 
+  origin: "bottom" });
+
+ScrollReveal().reveal(" .btn, .left, .left-home, .about-text, .contact-list", {
   origin: "left",
 });
-ScrollReveal().reveal(".right, .introduction-container", {
+ScrollReveal().reveal(".right, .introduction-container, .cloud, .contact-container", {
   origin: "right",
 });
 
