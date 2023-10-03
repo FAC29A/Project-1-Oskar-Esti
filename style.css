@@ -378,14 +378,13 @@ h2 {
   display: flex;
   grid-column: 2 / span 2;
   grid-row: 2 / span 2;
-  border: solid 2px black;
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
 }
 
 #carousel-img {
-  border: solid 2px black;
+
   height: 90%;
   width: 400px;
 }
@@ -406,29 +405,45 @@ h2 {
 
 /* ------------------------------------ CONTACT ------------------------------------------------------------------------------------------------------------------------------ */
 #contact {
+  background-image: url(images/sky.png);
+  background-color: #c5b083;
+  background-size:cover;
+  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-color: #168b72;
 }
 
+/* Be in Touch With Us */
 #contact h2 {
-  text-align: left;
+  font-size: calc(2vw + 6px);
+  text-align: center;
+  color: #c5b083;
+}
+
+/* TEXT */
+#contact h3 {
+  color: #c5b083;
+
+  font-size: calc(1.2vw + 6px);
+  font-weight: 400;
 }
 
 #contact .content-container {
   display: flex;
   flex-direction: column;
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 4;
   grid-row: 1;
-  margin-right: 1rem;
 }
 
 #contact-container {
+  border-radius: 20%;
+  box-shadow: 0 0 2rem #c5b083;
+  border-style: none;
   display: flex;
   justify-content: stretch;
   z-index: 1;
-  background-color: grey;
+  background-color: #a09168;
   grid-column: 3 / span 2;
   grid-row: 2 / span 2;
   max-width: 800px;
@@ -437,17 +452,20 @@ h2 {
 
 #contact-list {
   grid-column: 1;
-  grid-row: 2 / span 2;
 }
 
+
 #contact ul {
+  color: #c5b083;
+
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   justify-content: space-around;
 }
 
 .contact-form {
+  border-style: none;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -457,11 +475,17 @@ h2 {
 }
 
 .icon {
-  height: 1rem;
+  height: 1.5rem;
   margin-right: 0.7rem;
+  color: #c5b083;
+
 }
 
+
+
 fieldset {
+  border-style: none;;
+  border-radius: 20%;
   margin: 0;
   display: flex;
   box-sizing: border-box;
@@ -472,7 +496,7 @@ fieldset {
   width: 100%;
   height: 100%;
   padding: 40px;
-  border: solid 2px black;
+
 }
 
 .contact-row {
@@ -493,12 +517,7 @@ fieldset {
 input,
 textarea {
   font-family: inherit;
-  display: block;
-  border: 1px solid black;
-  background: white;
-  box-sizing: border-box;
-  font-size: 1rem;
-  padding: 10px;
+
 }
 
 input {
@@ -510,6 +529,7 @@ textarea {
   width: 100%;
   resize: none;
   overflow-y: auto;
+  border-style: none;
 }
 
 label {
@@ -524,7 +544,7 @@ label {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.9em;
-  background: grey;
+  background: white;
   align-items: center;
   font-weight: bold;
   column-gap: 5px;
@@ -533,6 +553,7 @@ label {
   max-width: 200px;
   min-height: 2rem;
   cursor: pointer;
+  box-shadow: white;
 }
 
 .send-button:hover {
