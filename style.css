@@ -373,16 +373,16 @@ h2 {
   display: block;
   background-repeat: no-repeat;
   background: linear-gradient(
-    rgb(233, 223, 223),
-    rgba(177, 185, 194, 0.432),
-    rgb(226, 220, 210),
-    rgba(194, 200, 206, 0.432)
+    white,
+    white,
+    #c5b89d,
+    #af9a6c,
+    #756749
   );
 }
 
 #fleet .content-container {
   justify-content: center;
-  margin-bottom: 2rem;
 }
 /* CAROUSEL */
 
