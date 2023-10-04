@@ -117,7 +117,6 @@ a:hover {
   position: absolute;
   padding-right: 100rem;
   height: calc(6vw + 20px);
-  cursor: pointer;
   -webkit-animation: fly 4s linear 0s infinite;
   -moz-animation: 4s linear 0s infinite;
   -0-animation: fly 4s linear 0s infinite;
@@ -167,7 +166,6 @@ html {
   opacity: 0.8;
   width: 1000px;
   height: calc(10vw + 500px);
-  cursor: pointer;
   position: absolute;
   animation: cloud 7s infinite;
 }
