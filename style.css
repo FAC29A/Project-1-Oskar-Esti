@@ -324,7 +324,7 @@ h2 {
 }
 
 .card:hover {
-  transform: scale(2.1);
+  transform: scale(1.2);
   z-index: 2;
 }
 
@@ -352,16 +352,17 @@ h2 {
   opacity: 1;
   transform: translateY(0);
   padding: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 /* EACH MEMBER'S TITLE */
 .member-info h4 {
-  font-size: calc(0.6vw + 6px);
+  font-size: calc(0.6vw + 4px);
 }
 
 /* EACH MEMBER'S TEXT */
 .member-info li {
-  font-size: calc(0.2vw + 6px);
+  font-size: calc(0.2vw + 8px);
   text-align: justify;
 }
 
@@ -370,11 +371,7 @@ h2 {
 #fleet {
   display: block;
   background-repeat: no-repeat;
-  background: linear-gradient(  
-    white,
-  white,
-  #cfcac0,
-  #c5b083);
+  background: linear-gradient(white, white, #cfcac0, #c5b083);
 }
 
 #fleet .content-container {
@@ -490,7 +487,6 @@ h2 {
 
 /* TEXT2 */
 #contact h4 {
-  padding: 5%;
   color: black;
   font-size: calc(1.2vw + 6px);
   font-weight: 500;
@@ -525,7 +521,7 @@ h2 {
 
 #contact ul {
   color: black;
-
+  padding-left: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -657,18 +653,16 @@ label {
 footer {
   text-align: center;
   color: white;
-  background-color: #c7b897;;
+  background-color: #c7b897;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
 
 footer a {
-color: #0377bd;
-font-size: calc(0.7vw + 5px);
-margin-left:0%;
-
+  font-size: inherit;
+  color: #0377bd;
+  margin-left: 0%;
 }
-
 
 /* -------------------------------------------------------------------------------MEDIA QUERIES------------------------------------------------------ */
 
