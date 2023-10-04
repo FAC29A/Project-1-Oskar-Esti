@@ -372,12 +372,7 @@ h2 {
 #fleet {
   display: block;
   background-repeat: no-repeat;
-  background: linear-gradient(
-    white,
-    white,
-    #cec6b6,
-    #c5b083
-  );
+  background: linear-gradient(white, white, #c5b89d, #af9a6c, #756749);
 }
 
 #fleet .content-container {
@@ -436,8 +431,8 @@ h2 {
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -660,7 +655,7 @@ label {
 footer {
   text-align: center;
   color: white;
-  background-color: #1470cb;
+  background-color: #0377bd;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
@@ -702,11 +697,11 @@ footer {
     margin-right: 1rem;
   }
 
-/* HOME */
+  /* HOME */
 
-.cloud {
-  top: 10rem;
-}
+  .cloud {
+    top: 10rem;
+  }
 
   /* ABOUT */
   .about-text {
@@ -742,12 +737,6 @@ footer {
   /* EACH MEMBER'S TEXT */
   .member-info li {
     font-size: 10px;
-  }
-
-  /* FLEET */
-
-  .slideshow-container img {
-    height: 215px;
   }
 
   /* CONTACT */
