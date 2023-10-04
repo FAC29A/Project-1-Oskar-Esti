@@ -678,6 +678,16 @@ label {
   position: relative;
 }
 
+/* -----------------------------------FOOTER-------------------------------------- */
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #1470cb;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
 /* -------------------------------------------------------------------------------MEDIA QUERIES------------------------------------------------------ */
 
 @media (max-width: 550px) {
