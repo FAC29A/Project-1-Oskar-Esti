@@ -1,7 +1,7 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  font-family: Didot, serif;
+  font-family: Josefin Sans, serif;
 }
 
 body {
@@ -232,7 +232,7 @@ html {
 
 /* FIRST TEXT: WELCOME TO... */
 .content-container {
-  display:flex;
+  display: flex;
   border-radius: 5px;
   font-size: calc(2vw + 6px);
   font-weight: 500;
@@ -676,12 +676,11 @@ label {
 /* -------------------------------------------------------------------------------MEDIA QUERIES------------------------------------------------------ */
 
 @media (max-width: 550px) {
-
   section {
-    height:fit-content;
+    height: fit-content;
     min-height: 100vh;
   }
-/* ABOUT */
+  /* ABOUT */
   .about-text {
     left: 10%;
     height: 100%;
@@ -690,7 +689,7 @@ label {
   }
 
   .content-container {
-    display:grid;
+    display: grid;
   }
 
   .card-container {
@@ -704,41 +703,37 @@ label {
   }
 
   .card:hover {
-    transform: 
-    scale(1.2);
+    transform: scale(1.2);
   }
 
   /* EACH MEMBER'S TITLE */
-.member-info h4 {
-  font-size: 14px;
-}
+  .member-info h4 {
+    font-size: 14px;
+  }
 
-/* EACH MEMBER'S TEXT */
-.member-info li {
-  font-size: 10px;
-}
+  /* EACH MEMBER'S TEXT */
+  .member-info li {
+    font-size: 10px;
+  }
 
+  /* ---------------CONTACT------------ */
+  #contact {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 
-/* ---------------CONTACT------------ */
-#contact {
-  display: block;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-}
+  .contact-list {
+    grid-row: 1;
+    flex-direction: column-reverse;
+  }
 
-.contact-list { 
- grid-row: 1;
- flex-direction:column-reverse;
+  #contact .content-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 
-}
-
-#contact .content-container {
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-.contact-list ul h4 { 
-width: 100%;
-}
-
+  .contact-list ul h4 {
+    width: 100%;
+  }
 }
