@@ -282,10 +282,10 @@ h2 {
   font-size: calc(1.6vw + 8px);
 }
 
-/* SECOND TEXT: Certainly... */
 #team-information {
   display: block;
-  padding-left: 20%;
+  max-width: 700px;
+  align-self: center;
   font-size: calc(0.7vw + 6px);
 }
 
@@ -294,19 +294,18 @@ h2 {
 }
 
 .card-container {
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 1.7rem;
-  padding-left: 8%;
+  padding-left: 10%;
   padding-right: 10%;
   -webkit-transition-property: all;
   -webkit-transition-timing-function: ease;
 }
 
 .card {
-  background-color: green;
-  position: relative;
   border-radius: 1rem;
   box-shadow: 0 0 5rem rgb(255, 255, 255);
   overflow: hidden;
@@ -317,8 +316,9 @@ h2 {
   border-radius: 4rem;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
   align-items: center;
+  transition: transform 0.3s ease-in-out;
+  margin: auto;
 }
 
 .card:hover {
