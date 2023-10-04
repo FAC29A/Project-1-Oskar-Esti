@@ -667,6 +667,7 @@ footer {
 footer a {
 color: #0377bd;
 font-size: calc(0.7vw + 5px);
+margin-left:0%;
 
 }
 
