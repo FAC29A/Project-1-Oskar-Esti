@@ -372,13 +372,7 @@ h2 {
 #fleet {
   display: block;
   background-repeat: no-repeat;
-  background: linear-gradient(
-    white,
-    white,
-    #c5b89d,
-    #af9a6c,
-    #756749
-  );
+  background: linear-gradient(white, white, #c5b89d, #af9a6c, #756749);
 }
 
 #fleet .content-container {
@@ -703,11 +697,11 @@ footer {
     margin-right: 1rem;
   }
 
-/* HOME */
+  /* HOME */
 
-.cloud {
-  top: 10rem;
-}
+  .cloud {
+    top: 10rem;
+  }
 
   /* ABOUT */
   .about-text {
@@ -743,12 +737,6 @@ footer {
   /* EACH MEMBER'S TEXT */
   .member-info li {
     font-size: 10px;
-  }
-
-  /* FLEET */
-
-  .slideshow-container img {
-    height: 215px;
   }
 
   /* CONTACT */
