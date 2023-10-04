@@ -35,7 +35,7 @@ section {
 .header {
   position: fixed;
   width: 100%;
-  background: white;
+  background: #ffffff;
   z-index: 3;
 }
 
@@ -49,6 +49,11 @@ section {
   display: flex;
   justify-content: end;
   width: 80%;
+}
+
+#header-nav {
+  display: flex;
+  align-items: center;
 }
 
 #header-nav-menu {
