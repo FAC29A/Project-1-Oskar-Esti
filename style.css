@@ -689,6 +689,10 @@ footer {
 /* -------------------------------------------------------------------------------MEDIA QUERIES------------------------------------------------------ */
 
 @media (max-width: 550px) {
+  body {
+    overflow-x: hidden;
+  }
+
   section {
     height: fit-content;
     min-height: 100vh;
